@@ -1,0 +1,8 @@
+{
+  "latestVersion": "1.2.0",
+  "releaseDate": "13/10/2026",
+  "title": "Chép Thẻ Nhanh Pro v1.2.0 - Quản Lý File Ảnh Chuyên Nghiệp",
+  "changelog": "• Tính năng mới: Tự động kiểm tra bản cập nhật mới từ GitHub của tác giả Hoàng Điệp.\n• Nâng cấp: Bảng chọn riêng từng ngày chụp khi thẻ có ảnh từ nhiều ngày khác nhau.\n• Nâng cấp: Tự động nhận diện nóng (hot-plug) cắm thẻ SD / Box SSD rời và làm mới ảnh tức thì.\n• Nâng cấp: Chạy ngầm thông minh trên khay hệ thống (System Tray), tự mở khi cắm thẻ nhớ.\n• Tối ưu tốc độ: Sao chép kép (Dual-Backup) kết hợp xác thực mã băm xxHash64 chống lỗi file RAW 100%.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest"
+}
