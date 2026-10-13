@@ -1,5 +1,5 @@
 {
-  "latestVersion": "1.2.0",
+  "latestVersion": "1.3.0",
   "releaseDate": "13/10/2026",
   "title": "Chép Thẻ Nhanh Pro v1.2.0 - Quản Lý File Ảnh Chuyên Nghiệp",
   "changelog": "• Tự động kiểm tra bản cập nhật mới từ GitHub của Hoàng Điệp.\n• Bổ sung bảng chọn riêng từng ngày chụp khi thẻ chứa nhiều job khác nhau.\n• Nhận diện tức thì khi cắm / rút thẻ SD hoặc Box SSD rời (Hot-plug Auto-Reload).\n• Chạy nền khay hệ thống (System Tray), tự mở khi cắm thẻ nhớ.\n• Sao chép Dual-Backup 2 ổ cứng cùng lúc kết hợp xác thực mã băm xxHash64 chống hỏng file RAW 100%.",
