@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.3.0",
+  "latestVersion": "1.4.0",
   "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.3.0 - Quản Lý & Lọc File Ảnh Chuyên Nghiệp",
-  "changelog": "• TÍCH HỢP TAB LỌC ẢNH THEO MÃ ĐỘC LẬP: Lọc và chép hàng loạt ảnh nhanh chóng theo danh sách số/mã ảnh do khách hàng chọn (VD: 12, 45, 120, DSC0012, 8820...).\n• Thuật toán nhận diện mã linh hoạt: hỗ trợ cả mã gốc, đệm 4 chữ số (0012), không phân biệt chữ hoa/thường, hỗ trợ mọi loại ảnh & RAW (JPG, PNG, ARW, CR2, CR3, NEF...).\n• Tự động tạo thư mục con theo ngày hoặc giữ nguyên theo cấu hình, ghi nhật ký log_loc_anh.txt chi tiết.\n• Tự động kiểm tra bản cập nhật mới từ GitHub của Hoàng Điệp.\n• Sao chép Dual-Backup 2 ổ cứng cùng lúc kết hợp xác thực mã băm xxHash64 chống hỏng file RAW 100%.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.3.0/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.3.0/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "title": "Chép Thẻ Nhanh Pro v1.4.0 - Preset Chips, Đồng Bộ 2 Tab & Giao Diện Sáng Tối",
+  "changelog": "• BỔ SUNG NÚT CHỌN NHANH ĐỊNH DẠNG ẢNH (PRESET CHIPS): Thao tác 1 chạm để lọc ảnh JPG/PNG, Sony (ARW), Canon (CR2, CR3), Nikon (NEF), Fuji (RAF), DNG/RAW cực kỳ tiện lợi.\n• TỰ ĐỘNG ĐỒNG BỘ ĐƯỜNG DẪN GIỮA 2 TAB: Chuyển ngay thư mục vừa đổ thẻ ở Tab 1 sang Tab Lọc Ảnh theo mã khi bấm chuyển tab hoặc xong job, kèm nút [⚡ Lấy Thư Mục Vừa Đổ].\n• GIAO DIỆN SÁNG / TỐI (LIGHT & DARK STUDIO): Thêm nút đổi giao diện ☀️ Sáng / 🌙 Tối trên thanh tiêu đề, bảo vệ mắt khi làm việc ban đêm, tự động lưu cấu hình.\n• BỘ NHỚ ĐỆM THÔNG MINH CHO BẢN CẬP NHẬT: Nhận diện file setup đã tải sẵn trong bộ nhớ tạm để bấm cài đặt ngay lập tức, không tốn thời gian tải lại.\n• CƠ CHẾ CHỐNG KHÓA FILE & DEFENDER: Vượt qua độ trễ quét tệp của Windows Defender bằng vòng lặp mở khóa an toàn, tự động loại trừ thư mục cài đặt.\n• CẬP NHẬT THÔNG TIN PHIÊN BẢN CHUẨN XÁC: Tự động hiển thị đúng phiên bản v1.4.0 trong bảng Giới thiệu và tiêu đề ứng dụng.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.0/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.0/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
