@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.4.4",
+  "latestVersion": "1.4.5",
   "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.4.4 - Bổ Sung Nút Lịch Sử Lọc Ảnh Theo Mã",
-  "changelog": "• BỔ SUNG NÚT [📜 LỊCH SỬ LỌC] TẠI TAB LỌC ẢNH THEO MÃ: Lưu lại toàn bộ lịch sử các lần lọc ảnh theo mã khách chọn.\n• TRA CỨU & MỞ THƯ MỤC NHANH: Xem thời gian lọc, số ảnh đã lọc, định dạng và 1-click mở ngay thư mục đích trên ổ cứng.\n• LƯU TRỮ ĐỐI SOÁT MÃ THIẾU: Lưu lại chính xác các mã ảnh khách gửi bị thiếu trong lịch sử kèm nút [📋 Copy Mã Thiếu] để gửi lại bất cứ khi nào.\n• TÌM KIẾM THÔNG MINH: Tìm nhanh lịch sử lọc theo ngày, đường dẫn thư mục nguồn/đích hoặc mã ảnh.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.4/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.4/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "title": "Chép Thẻ Nhanh Pro v1.4.5 - Tự Động Check Update & Đổi Tên Tự Do",
+  "changelog": "• 🔄 TỰ ĐỘNG KIỂM TRA BẢN MỚI KHI BẤM NÚT ⓘ THÔNG TIN: Khi bấm [ⓘ Thông tin], phần mềm sẽ tự động kiểm tra online trước. Nếu phát hiện phiên bản mới, bảng tải & cập nhật sẽ tự động bật lên ngay lập tức!\n• ✍️ NHẬP TỰ DO TÊN FILE & TIỀN TỐ KHI SAO CHÉP: Đã bỏ danh sách lựa chọn cố định ở mục Đổi tên file. Giờ đây bạn có thể thoải mái nhập bất kỳ tên hoặc tiền tố nào muốn đổi (VD: HoangDiep, DamCuoiA_B...). Phần mềm tự động giữ an toàn số đuôi file gốc chống ghi đè!\n• 🌟 NÂNG CẤP NÚT BẢNG THÔNG TIN NỔI BẬT: Các nút Kiểm Tra Cập Nhật, GitHub, Facebook và Đóng trong bảng thông tin được thiết kế lại với màu sắc tươi sáng, chữ in đậm tương phản cao cực kỳ rõ nét và chuyên nghiệp.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.5/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.5/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
