@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.4.0",
+  "latestVersion": "1.4.1",
   "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.4.0 - Preset Chips, Đồng Bộ 2 Tab & Giao Diện Sáng Tối",
-  "changelog": "• BỔ SUNG NÚT CHỌN NHANH ĐỊNH DẠNG ẢNH (PRESET CHIPS): Thao tác 1 chạm để lọc ảnh JPG/PNG, Sony (ARW), Canon (CR2, CR3), Nikon (NEF), Fuji (RAF), DNG/RAW cực kỳ tiện lợi.\n• TỰ ĐỘNG ĐỒNG BỘ ĐƯỜNG DẪN GIỮA 2 TAB: Chuyển ngay thư mục vừa đổ thẻ ở Tab 1 sang Tab Lọc Ảnh theo mã khi bấm chuyển tab hoặc xong job, kèm nút [⚡ Lấy Thư Mục Vừa Đổ].\n• GIAO DIỆN SÁNG / TỐI (LIGHT & DARK STUDIO): Thêm nút đổi giao diện ☀️ Sáng / 🌙 Tối trên thanh tiêu đề, bảo vệ mắt khi làm việc ban đêm, tự động lưu cấu hình.\n• BỘ NHỚ ĐỆM THÔNG MINH CHO BẢN CẬP NHẬT: Nhận diện file setup đã tải sẵn trong bộ nhớ tạm để bấm cài đặt ngay lập tức, không tốn thời gian tải lại.\n• CƠ CHẾ CHỐNG KHÓA FILE & DEFENDER: Vượt qua độ trễ quét tệp của Windows Defender bằng vòng lặp mở khóa an toàn, tự động loại trừ thư mục cài đặt.\n• CẬP NHẬT THÔNG TIN PHIÊN BẢN CHUẨN XÁC: Tự động hiển thị đúng phiên bản v1.4.0 trong bảng Giới thiệu và tiêu đề ứng dụng.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.0/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.0/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "title": "Chép Thẻ Nhanh Pro v1.4.1 - Fix Nền Trắng ComboBox & Nâng Cấp Chữ Nổi Bật",
+  "changelog": "• KHẮC PHỤC TRIỆT ĐỂ Ô CHỌN LOẠI JOB BỊ NỀN TRẮNG: Thiết kế lại toàn bộ template ComboBox (Loại Job, Mẫu đổi tên file) chuẩn phong cách Dark Studio, chữ trắng đậm rõ nét trên nền tối, không còn bị lỗi nền trắng Aero.\n• THIẾT KẾ LẠI GIAO DIỆN CHỮ NỔI BẬT (HIGH CONTRAST): Toàn bộ tiêu đề và nhãn trường (Thẻ nhớ, Ổ cứng, Tên khách, Loại job, Ngày chụp, Dòng máy, Serial, Thợ...) được tăng độ đậm SemiBold và màu sắc tương phản cao, cực kỳ sắc nét và dễ đọc.\n• SỬA LỖI ĐÈ CHỮ Ở KHUNG DUNG LƯỢNG Ổ CỨNG: Cố định 2 cột hiển thị dung lượng trống và dung lượng sau chép, khắc phục hoàn toàn tình trạng chữ đè lên nhau.\n• ĐỒNG BỘ CHỦ ĐỀ SÁNG TỐI CHO Ô CHỌN NGÀY CHỤP: Ô DatePicker tự động đổi màu mượt mà theo chế độ Sáng / Tối, phông chữ to rõ.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.1/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.1/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
