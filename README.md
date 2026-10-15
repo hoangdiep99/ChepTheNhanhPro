@@ -32,6 +32,7 @@
 * 📅 **Lọc và chọn theo ngày chụp**: Thẻ chứa nhiều job/show chụp khác nhau có thể chọn đổ riêng từng ngày cực kỳ tiện lợi.
 * 📸 **Ghi nhớ máy & Thợ chụp (Camera Profile)**: Gán tên thợ theo Serial máy ảnh, cắm thẻ lần sau là phần mềm tự động điền đúng tên thợ chụp.
 * ☕ **Tự động ngắt kết nối an toàn (Auto-Eject)**: Sau khi chép và kiểm tra mã băm xong, app tự eject thẻ an toàn để bạn yên tâm rút ra cắm máy chụp tiếp.
+* ✍️ **Đổi tên file tự do linh hoạt**: Thoải mái nhập bất kỳ tên hoặc tiền tố nào theo ý muốn, hệ thống tự động bảo toàn số đuôi file gốc chống trùng lặp dữ liệu.
 * 📜 **Lịch sử đổ thẻ & Mở nhanh 1-Click**: Lưu lại toàn bộ lịch sử các show chụp đã đổ thẻ, tìm kiếm theo tên khách và mở trực tiếp thư mục trên ổ cứng.
 
 ### 🎯 2. Lọc Ảnh Theo Mã Khách Chọn Siêu Tốc (Tab 2)
@@ -47,7 +48,7 @@
 * 🌓 **Giao diện Dark / Light Mode Studio**: Tùy biến linh hoạt giữa giao diện Dark Studio chuyên nghiệp chống mỏi mắt và giao diện Light sáng sủa.
 * 🔗 **Đồng bộ đường dẫn 2 chiều**: Vừa đổ thẻ xong, đường dẫn thư mục tự động đồng bộ sang Tab Lọc Ảnh mà không cần chọn lại thư mục.
 * 🪟 **Tích hợp chuột phải Windows (Context Menu)**: Nhấp chuột phải vào bất kỳ thư mục hay ổ đĩa nào để đổ thẻ hoặc lọc ảnh ngay lập tức.
-* 🔄 **Tự động kiểm tra & Cập nhật ngầm (Auto-Update)**: 1-click cập nhật trực tiếp phiên bản mới nhất từ GitHub của tác giả Hoàng Điệp.
+* 🔄 **Tự động kiểm tra bản mới (Auto-Update Check)**: Tự động kiểm tra bản cập nhật mới ngay khi bấm nút [ⓘ Thông tin] và tải về chỉ với 1 click.
 * 🍎 **Đa nền tảng Windows & macOS**: Tương thích hoàn hảo Windows 10/11 và macOS (Apple Silicon M1/M2/M3/M4 & Intel).
 
 ---
