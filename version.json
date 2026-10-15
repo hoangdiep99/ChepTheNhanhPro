@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.4.3",
+  "latestVersion": "1.4.4",
   "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.4.3 - Khôi Phục Nút Bấm & Nâng Cấp Mục Thông Tin",
-  "changelog": "• KHÔI PHỤC ĐẦY ĐỦ THANH NÚT BẤM TAB ĐỔ THẺ: Khôi phục thanh công cụ trực quan trên Tab 1: [Bắt đầu chép], [Tạm dừng], [Hủy Job], [Lịch sử đổ thẻ], [Mở thư mục đích], [Xem báo cáo].\n• BỔ SUNG LINK GITHUB & NÚT GITHUB DỰ ÁN: Thêm liên kết GitHub chính thức vào mục thông tin tác giả và thêm nút 1-click mở GitHub dự án.\n• CẬP NHẬT GIỚI THIỆU ỨNG DỤNG TOÀN DIỆN: Giới thiệu chi tiết cả 2 giải pháp: Đổ thẻ tốc độ cao & Lọc ảnh theo mã siêu tốc.\n• HƯỚNG DẪN SỬ DỤNG RÕ RÀNG CHO CẢ 2 TAB: Hướng dẫn chi tiết từng bước cho cả Tab Đổ Thẻ và Tab Lọc Ảnh kèm công cụ Đối Soát & Báo Cáo Mã Thiếu (Missing Inspector).",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.3/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.3/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "title": "Chép Thẻ Nhanh Pro v1.4.4 - Bổ Sung Nút Lịch Sử Lọc Ảnh Theo Mã",
+  "changelog": "• BỔ SUNG NÚT [📜 LỊCH SỬ LỌC] TẠI TAB LỌC ẢNH THEO MÃ: Lưu lại toàn bộ lịch sử các lần lọc ảnh theo mã khách chọn.\n• TRA CỨU & MỞ THƯ MỤC NHANH: Xem thời gian lọc, số ảnh đã lọc, định dạng và 1-click mở ngay thư mục đích trên ổ cứng.\n• LƯU TRỮ ĐỐI SOÁT MÃ THIẾU: Lưu lại chính xác các mã ảnh khách gửi bị thiếu trong lịch sử kèm nút [📋 Copy Mã Thiếu] để gửi lại bất cứ khi nào.\n• TÌM KIẾM THÔNG MINH: Tìm nhanh lịch sử lọc theo ngày, đường dẫn thư mục nguồn/đích hoặc mã ảnh.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.4/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.4/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
