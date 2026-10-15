@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.4.1",
+  "latestVersion": "1.4.2",
   "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.4.1 - Fix Nền Trắng ComboBox & Nâng Cấp Chữ Nổi Bật",
-  "changelog": "• KHẮC PHỤC TRIỆT ĐỂ Ô CHỌN LOẠI JOB BỊ NỀN TRẮNG: Thiết kế lại toàn bộ template ComboBox (Loại Job, Mẫu đổi tên file) chuẩn phong cách Dark Studio, chữ trắng đậm rõ nét trên nền tối, không còn bị lỗi nền trắng Aero.\n• THIẾT KẾ LẠI GIAO DIỆN CHỮ NỔI BẬT (HIGH CONTRAST): Toàn bộ tiêu đề và nhãn trường (Thẻ nhớ, Ổ cứng, Tên khách, Loại job, Ngày chụp, Dòng máy, Serial, Thợ...) được tăng độ đậm SemiBold và màu sắc tương phản cao, cực kỳ sắc nét và dễ đọc.\n• SỬA LỖI ĐÈ CHỮ Ở KHUNG DUNG LƯỢNG Ổ CỨNG: Cố định 2 cột hiển thị dung lượng trống và dung lượng sau chép, khắc phục hoàn toàn tình trạng chữ đè lên nhau.\n• ĐỒNG BỘ CHỦ ĐỀ SÁNG TỐI CHO Ô CHỌN NGÀY CHỤP: Ô DatePicker tự động đổi màu mượt mà theo chế độ Sáng / Tối, phông chữ to rõ.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.1/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.1/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "title": "Chép Thẻ Nhanh Pro v1.4.2 - Đối Soát & Báo Cáo Mã Thiếu (Missing Inspector)",
+  "changelog": "• ĐỐI SOÁT & BÁO CÁO MÃ THIẾU (MISSING INSPECTOR): Tự động phát hiện các mã ảnh khách yêu cầu nhưng không tìm thấy trong thư mục nguồn (do khách gõ sai hoặc ảnh đã bị xóa), hiển thị cảnh báo trực quan.\n• NÚT 1-CLICK [📋 COPY MÃ THIẾU]: Bấm một nút là sao chép toàn bộ danh sách mã ảnh bị thiếu vào Clipboard để gửi đối soát ngay cho khách qua Zalo/Facebook Messenger.\n• ĐỊNH DẠNG THƯ MỤC CON LỌC ẢNH dd-MM-yyyy: Tự động sắp xếp tên thư mục lọc theo chuẩn ngày-tháng-năm (Auto loc anh 15-10-2026).\n• TỐI ƯU THUẬT TOÁN ĐỐI SOÁT & TRÁNH NHẬN NHẦM SỐ: Phân tích chính xác mã số ngắn, mã máy ảnh và làm sạch văn bản chat khách gửi.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.2/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.2/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
