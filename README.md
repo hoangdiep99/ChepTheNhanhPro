@@ -24,12 +24,30 @@
 
 ## ✨ Tính Năng Nổi Bật
 
-* 🚀 **Tự động nhận diện thẻ nhớ (Hot-plug Auto-Reload)**: Cắm thẻ nhớ SD hoặc Box SSD rời là phần mềm tự động bật lên và nạp dữ liệu ngay lập tức.
-* 🛡️ **Sao chép Dual-Backup song song**: Đổ thẻ đồng thời vào 2 ổ cứng (Ổ làm việc + Ổ lưu trữ dự phòng).
-* 🔒 **Xác thực mã băm xxHash64 siêu tốc**: Đảm bảo 100% dữ liệu không bị hỏng file RAW, sai lệch bit hay mất ảnh/video.
+### ⚡ 1. Đổ Thẻ & Sao Chép Dữ Liệu Tốc Độ Cao (Tab 1)
+* 🚀 **Tự động nhận diện thẻ nhớ (Hot-plug Auto-Reload)**: Cắm thẻ nhớ SD, CFexpress, XQD hoặc Box SSD rời là phần mềm tự động bật lên và nạp dữ liệu ngay lập tức.
+* 🛡️ **Sao chép Dual-Backup song song**: Đổ thẻ đồng thời vào 2 ổ cứng (Ổ làm việc + Ổ lưu trữ dự phòng) trong cùng một lượt chép.
+* 🔒 **Xác thực mã băm xxHash64 siêu tốc**: Kiểm tra tính toàn vẹn 100% từng file sau khi sao chép, loại bỏ hoàn toàn nguy cơ hỏng file RAW hay sai lệch dữ liệu.
+* 📁 **Tự động chia thư mục con RAW / JPG / Video**: Phân loại tự động sẵn vào các thư mục con riêng biệt, tiện lấy riêng file JPG gửi khách xem nhanh.
 * 📅 **Lọc và chọn theo ngày chụp**: Thẻ chứa nhiều job/show chụp khác nhau có thể chọn đổ riêng từng ngày cực kỳ tiện lợi.
-* 🔄 **Tự động cập nhật ngầm**: Tự động kiểm tra và thông báo khi có phiên bản mới từ GitHub của tác giả Hoàng Điệp.
-* ☕ **Tự động ngắt kết nối an toàn (Auto-Eject)**: Sau khi chép và kiểm tra xong, app tự eject thẻ an toàn để bạn rút ra cắm máy chụp tiếp.
+* 📸 **Ghi nhớ máy & Thợ chụp (Camera Profile)**: Gán tên thợ theo Serial máy ảnh, cắm thẻ lần sau là phần mềm tự động điền đúng tên thợ chụp.
+* ☕ **Tự động ngắt kết nối an toàn (Auto-Eject)**: Sau khi chép và kiểm tra mã băm xong, app tự eject thẻ an toàn để bạn yên tâm rút ra cắm máy chụp tiếp.
+* 📜 **Lịch sử đổ thẻ & Mở nhanh 1-Click**: Lưu lại toàn bộ lịch sử các show chụp đã đổ thẻ, tìm kiếm theo tên khách và mở trực tiếp thư mục trên ổ cứng.
+
+### 🎯 2. Lọc Ảnh Theo Mã Khách Chọn Siêu Tốc (Tab 2)
+* 📋 **Bóc tách mã ảnh thông minh từ tin nhắn chat**: Chỉ cần copy nguyên văn tin nhắn khách gửi từ Zalo, Facebook Messenger, file Excel/Text dán vào app; thuật toán thông minh tự động trích xuất đúng danh sách mã ảnh cần lọc.
+* 🔍 **Hỗ trợ mọi định dạng mã**: Tìm kiếm linh hoạt theo 3–4 số đuôi (0123, 4567...) hoặc mã máy ảnh (`DSC`, `IMG`, `_MG`), không sợ khách gõ dấu phẩy, khoảng trắng hay xuống dòng.
+* ⚠️ **Đối Soát & Báo Cáo Mã Thiếu (Missing Inspector)**: Tự động phát hiện các mã khách gõ nhầm hoặc ảnh không tồn tại trong thư mục, hiển thị cảnh báo đỏ trực quan.
+* 📋 **Nút 1-Click [Copy Mã Thiếu]**: Sao chép toàn bộ danh sách mã ảnh bị thiếu vào Clipboard chỉ với 1 cú click để gửi ngay cho khách đối soát qua tin nhắn.
+* 🗂️ **Xuất thư mục chuẩn ngày (dd-MM-yyyy)**: Tự động gom các ảnh được chọn vào thư mục con dạng `Auto loc anh dd-MM-yyyy` ngăn nắp.
+* 🧩 **Tùy chọn lọc linh hoạt**: Lọc tất cả, chỉ lọc file RAW hoặc chỉ lọc JPG; hỗ trợ chế độ Sao Chép (Copy) hoặc Di Chuyển (Move).
+
+### 🌟 3. Tiện Ích & Trải Nghiệm Studio Đẳng Cấp
+* 🌓 **Giao diện Dark / Light Mode Studio**: Tùy biến linh hoạt giữa giao diện Dark Studio chuyên nghiệp chống mỏi mắt và giao diện Light sáng sủa.
+* 🔗 **Đồng bộ đường dẫn 2 chiều**: Vừa đổ thẻ xong, đường dẫn thư mục tự động đồng bộ sang Tab Lọc Ảnh mà không cần chọn lại thư mục.
+* 🪟 **Tích hợp chuột phải Windows (Context Menu)**: Nhấp chuột phải vào bất kỳ thư mục hay ổ đĩa nào để đổ thẻ hoặc lọc ảnh ngay lập tức.
+* 🔄 **Tự động kiểm tra & Cập nhật ngầm (Auto-Update)**: 1-click cập nhật trực tiếp phiên bản mới nhất từ GitHub của tác giả Hoàng Điệp.
+* 🍎 **Đa nền tảng Windows & macOS**: Tương thích hoàn hảo Windows 10/11 và macOS (Apple Silicon M1/M2/M3/M4 & Intel).
 
 ---
 
@@ -37,4 +55,5 @@
 
 * **Tác giả**: **Hoàng Điệp**
 * **Facebook**: [facebook.com/HoangdiepLN](https://www.facebook.com/HoangdiepLN)
+* **GitHub**: [github.com/hoangdiep99/ChepTheNhanhPro](https://github.com/hoangdiep99/ChepTheNhanhPro)
 * **Bản quyền**: © 2026 Hoàng Điệp. Tất cả các quyền được bảo lưu.
