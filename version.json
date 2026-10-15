@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.4.2",
+  "latestVersion": "1.4.3",
   "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.4.2 - Đối Soát & Báo Cáo Mã Thiếu (Missing Inspector)",
-  "changelog": "• ĐỐI SOÁT & BÁO CÁO MÃ THIẾU (MISSING INSPECTOR): Tự động phát hiện các mã ảnh khách yêu cầu nhưng không tìm thấy trong thư mục nguồn (do khách gõ sai hoặc ảnh đã bị xóa), hiển thị cảnh báo trực quan.\n• NÚT 1-CLICK [📋 COPY MÃ THIẾU]: Bấm một nút là sao chép toàn bộ danh sách mã ảnh bị thiếu vào Clipboard để gửi đối soát ngay cho khách qua Zalo/Facebook Messenger.\n• ĐỊNH DẠNG THƯ MỤC CON LỌC ẢNH dd-MM-yyyy: Tự động sắp xếp tên thư mục lọc theo chuẩn ngày-tháng-năm (Auto loc anh 15-10-2026).\n• TỐI ƯU THUẬT TOÁN ĐỐI SOÁT & TRÁNH NHẬN NHẦM SỐ: Phân tích chính xác mã số ngắn, mã máy ảnh và làm sạch văn bản chat khách gửi.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.2/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.2/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "title": "Chép Thẻ Nhanh Pro v1.4.3 - Khôi Phục Nút Bấm & Nâng Cấp Mục Thông Tin",
+  "changelog": "• KHÔI PHỤC ĐẦY ĐỦ THANH NÚT BẤM TAB ĐỔ THẺ: Khôi phục thanh công cụ trực quan trên Tab 1: [Bắt đầu chép], [Tạm dừng], [Hủy Job], [Lịch sử đổ thẻ], [Mở thư mục đích], [Xem báo cáo].\n• BỔ SUNG LINK GITHUB & NÚT GITHUB DỰ ÁN: Thêm liên kết GitHub chính thức vào mục thông tin tác giả và thêm nút 1-click mở GitHub dự án.\n• CẬP NHẬT GIỚI THIỆU ỨNG DỤNG TOÀN DIỆN: Giới thiệu chi tiết cả 2 giải pháp: Đổ thẻ tốc độ cao & Lọc ảnh theo mã siêu tốc.\n• HƯỚNG DẪN SỬ DỤNG RÕ RÀNG CHO CẢ 2 TAB: Hướng dẫn chi tiết từng bước cho cả Tab Đổ Thẻ và Tab Lọc Ảnh kèm công cụ Đối Soát & Báo Cáo Mã Thiếu (Missing Inspector).",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.3/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.3/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
