@@ -41,6 +41,7 @@
 * 📋 **Nút 1-Click [Copy Mã Thiếu]**: Sao chép toàn bộ danh sách mã ảnh bị thiếu vào Clipboard chỉ với 1 cú click để gửi ngay cho khách đối soát qua tin nhắn.
 * 🗂️ **Xuất thư mục chuẩn ngày (dd-MM-yyyy)**: Tự động gom các ảnh được chọn vào thư mục con dạng `Auto loc anh dd-MM-yyyy` ngăn nắp.
 * 🧩 **Tùy chọn lọc linh hoạt**: Lọc tất cả, chỉ lọc file RAW hoặc chỉ lọc JPG; hỗ trợ chế độ Sao Chép (Copy) hoặc Di Chuyển (Move).
+* 📜 **Lịch sử lọc ảnh & Mở thư mục 1-Click**: Lưu lại chi tiết các lần lọc ảnh theo mã, xem số lượng ảnh, danh sách mã thiếu và 1-click mở ngay thư mục trên ổ cứng.
 
 ### 🌟 3. Tiện Ích & Trải Nghiệm Studio Đẳng Cấp
 * 🌓 **Giao diện Dark / Light Mode Studio**: Tùy biến linh hoạt giữa giao diện Dark Studio chuyên nghiệp chống mỏi mắt và giao diện Light sáng sủa.
