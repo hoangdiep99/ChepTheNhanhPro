@@ -45,12 +45,15 @@
 * 📜 **Lịch sử lọc ảnh & Mở thư mục 1-Click**: Lưu lại chi tiết các lần lọc ảnh theo mã, xem số lượng ảnh, danh sách mã thiếu và 1-click mở ngay thư mục trên ổ cứng.
 * ☁️ **Nút 1-Click [Up Lên Drive]**: Lọc ảnh xong bấm 1 nút là tự động nạp thẳng toàn bộ thư mục ảnh đã lọc lên Google Drive mà không cần mở trình duyệt web.
 
-### ☁️ 3. Google Drive Pro - Trình Quản Lý Đám Mây Studio (Tab 3)
+### ☁️ 3. Google Drive Pro - Trình Quản Lý Đám Mây Phong Cách AirExplorer (Tab 3)
+* 🗂️ **Giao diện 2 cột chuẩn AirExplorer**: Cây Thư Mục (TreeView) bên trái giúp xem toàn bộ cấu trúc thư mục dạng cây, mở rộng nhánh mượt mà; thanh kéo giãn Splitter tùy chỉnh độ rộng linh hoạt.
+* 👁️ **Thay đổi chế độ xem chuẩn Windows Explorer**: Tùy chọn 6 chế độ xem: Biểu tượng lớn (Large icons), Biểu tượng vừa (Medium icons), Biểu tượng nhỏ (Small icons), Danh sách (List), Chi tiết (Details), Xếp ô (Tiles).
+* 📁 **Chế độ Biểu tượng lớn (Large Icons)**: Hiển thị các thư mục vàng nổi bật và tệp tin dạng ô vuông sắc nét, nhấp đúp để duyệt sâu vào trong thư mục con tương tự AirExplorer.
+* 📊 **Thanh trạng thái thời gian thực**: Hiển thị tức thì tổng số mục trong thư mục hiện tại (XX mục) và số dung lượng lưu trữ còn trống (XX GB trống).
 * 🖱️ **Kéo Thả Tải Lên Siêu Tốc (Drag & Drop Explorer)**: Kéo file hoặc kéo cả cây thư mục ảnh từ Windows Explorer bên ngoài thả trực tiếp vào app để tải lên Drive ngay tức khắc.
-* 📂 **Thao Tác File & Thư Mục Đầy Đủ**: Hỗ trợ mở thư mục con, điều hướng Lùi/Tiến/Lên, tạo thư mục mới, đổi tên (`F2`), xóa vào thùng rác (`Delete`).
+* 📂 **Thao Tác File & Thư Mục Đầy Đủ**: Mở thư mục con, Lùi (`Backspace`), Tiến, Lên, Tạo thư mục mới, Đổi tên (`F2`), Xóa vào thùng rác (`Delete`).
 * ✂️ **Sao Chép (Ctrl+C), Cắt (Ctrl+X) & Dán (Ctrl+V) Cloud**: Thao tác di chuyển hoặc nhân bản file/thư mục trực tiếp trên máy chủ Google Drive không tốn băng thông máy cục bộ.
 * 🔗 **1-Click Chia Sẻ Link Công Khai**: Tự động bật quyền chia sẻ link 'Bất kỳ ai có link đều xem được' và copy ngay đường link vào Clipboard để gửi cho khách.
-* 📊 **Đo Dung Lượng & Quản Lý Đăng Nhập An Toàn**: Hiển thị thanh dung lượng Google Drive trực quan, lưu token an toàn trong AppData để không phải đăng nhập lại mỗi lần mở app.
 
 ### 🌟 4. Tiện Ích & Trải Nghiệm Studio Đẳng Cấp
 * 🌓 **Giao diện Dark / Light Mode Studio**: Tùy biến linh hoạt giữa giao diện Dark Studio chuyên nghiệp chống mỏi mắt và giao diện Light sáng sủa.
