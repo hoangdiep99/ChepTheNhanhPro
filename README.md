@@ -43,8 +43,16 @@
 * 🗂️ **Xuất thư mục chuẩn ngày (dd-MM-yyyy)**: Tự động gom các ảnh được chọn vào thư mục con dạng `Auto loc anh dd-MM-yyyy` ngăn nắp.
 * 🧩 **Tùy chọn lọc linh hoạt**: Lọc tất cả, chỉ lọc file RAW hoặc chỉ lọc JPG; hỗ trợ chế độ Sao Chép (Copy) hoặc Di Chuyển (Move).
 * 📜 **Lịch sử lọc ảnh & Mở thư mục 1-Click**: Lưu lại chi tiết các lần lọc ảnh theo mã, xem số lượng ảnh, danh sách mã thiếu và 1-click mở ngay thư mục trên ổ cứng.
+* ☁️ **Nút 1-Click [Up Lên Drive]**: Lọc ảnh xong bấm 1 nút là tự động nạp thẳng toàn bộ thư mục ảnh đã lọc lên Google Drive mà không cần mở trình duyệt web.
 
-### 🌟 3. Tiện Ích & Trải Nghiệm Studio Đẳng Cấp
+### ☁️ 3. Google Drive Pro - Trình Quản Lý Đám Mây Studio (Tab 3)
+* 🖱️ **Kéo Thả Tải Lên Siêu Tốc (Drag & Drop Explorer)**: Kéo file hoặc kéo cả cây thư mục ảnh từ Windows Explorer bên ngoài thả trực tiếp vào app để tải lên Drive ngay tức khắc.
+* 📂 **Thao Tác File & Thư Mục Đầy Đủ**: Hỗ trợ mở thư mục con, điều hướng Lùi/Tiến/Lên, tạo thư mục mới, đổi tên (`F2`), xóa vào thùng rác (`Delete`).
+* ✂️ **Sao Chép (Ctrl+C), Cắt (Ctrl+X) & Dán (Ctrl+V) Cloud**: Thao tác di chuyển hoặc nhân bản file/thư mục trực tiếp trên máy chủ Google Drive không tốn băng thông máy cục bộ.
+* 🔗 **1-Click Chia Sẻ Link Công Khai**: Tự động bật quyền chia sẻ link 'Bất kỳ ai có link đều xem được' và copy ngay đường link vào Clipboard để gửi cho khách.
+* 📊 **Đo Dung Lượng & Quản Lý Đăng Nhập An Toàn**: Hiển thị thanh dung lượng Google Drive trực quan, lưu token an toàn trong AppData để không phải đăng nhập lại mỗi lần mở app.
+
+### 🌟 4. Tiện Ích & Trải Nghiệm Studio Đẳng Cấp
 * 🌓 **Giao diện Dark / Light Mode Studio**: Tùy biến linh hoạt giữa giao diện Dark Studio chuyên nghiệp chống mỏi mắt và giao diện Light sáng sủa.
 * 🔗 **Đồng bộ đường dẫn 2 chiều**: Vừa đổ thẻ xong, đường dẫn thư mục tự động đồng bộ sang Tab Lọc Ảnh mà không cần chọn lại thư mục.
 * 🪟 **Tích hợp chuột phải Windows (Context Menu)**: Nhấp chuột phải vào bất kỳ thư mục hay ổ đĩa nào để đổ thẻ hoặc lọc ảnh ngay lập tức.
