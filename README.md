@@ -58,8 +58,9 @@
 * 👁️ **Thay Đổi Chế Độ Xem Chuẩn Windows Explorer**: Tùy chọn các chế độ xem: Biểu tượng lớn (Large icons), Biểu tượng vừa (Medium icons), Biểu tượng nhỏ (Small icons), Danh sách (List), Chi tiết (Details), Xếp ô (Tiles).
 * 📊 **Thanh Trạng Thái Thời Gian Thực**: Hiển thị tức thì tổng số mục trong thư mục hiện tại (XX mục) và số dung lượng lưu trữ còn trống (XX GB trống).
 * 🖱️ **Kéo Thả Tải Lên Siêu Tốc (Drag & Drop Explorer)**: Kéo file hoặc kéo cả cây thư mục ảnh từ Windows Explorer bên ngoài thả trực tiếp vào app để tải lên Drive ngay tức khắc.
-* 📂 **Thao Tác File & Thư Mục Đầy Đủ**: Mở thư mục con, Lùi (`Backspace`), Tiến, Lên, Tạo thư mục mới, Đổi tên (`F2`), Xóa vào thùng rác (`Delete`).
-* ✂️ **Sao Chép (Ctrl+C), Cắt (Ctrl+X) & Dán (Ctrl+V) Cloud**: Thao tác di chuyển hoặc nhân bản file/thư mục trực tiếp trên máy chủ Google Drive không tốn băng thông máy cục bộ.
+* 📂 **Thao Tác File & Thư Mục Đầy Đủ**: Mở thư mục con, Lùi (`Backspace`), Tiến, Lên, Tạo thư mục mới (`Ctrl+Shift+N`), Đổi tên (`F2`), Xóa (`Delete`).
+* 📁 **Tạo Thư Mục Siêu Dễ Dàng (Ctrl+Shift+N)**: Tạo thư mục nhanh như Windows bằng phím tắt `Ctrl+Shift+N` (hoặc `Ctrl+N`) và nút [📁+ Tạo Thư Mục] trên cả Google Drive và Máy tính (Local PC); tự động đề xuất tên thông minh và bôi đen sẵn chỉ cần Enter là xong!
+* 📋 **Sao Chép (Ctrl+C) & Dán (Ctrl+V) Chuẩn Windows**: Sao chép ảnh từ máy tính dán sang Drive là tự động tải lên ngay lập tức; sao chép từ Drive dán vào máy tính là tự động tải về; dán trong máy tính tự động tạo bản sao ('Tên - Copy.ext'). Đã loại bỏ hoàn toàn quyền Cut (Cắt) để loại trừ 100% rủi ro mất file gốc!
 * 🔗 **1-Click Chia Sẻ Link Công Khai**: Tự động bật quyền chia sẻ link 'Bất kỳ ai có link đều xem được' và copy ngay đường link vào Clipboard để gửi cho khách.
 
 ### 🌟 4. Tiện Ích & Trải Nghiệm Studio Đẳng Cấp
