@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.4.5",
-  "releaseDate": "15/10/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.4.5 - Tự Động Check Update & Đổi Tên Tự Do",
-  "changelog": "• 🔄 TỰ ĐỘNG KIỂM TRA BẢN MỚI KHI BẤM NÚT ⓘ THÔNG TIN: Khi bấm [ⓘ Thông tin], phần mềm sẽ tự động kiểm tra online trước. Nếu phát hiện phiên bản mới, bảng tải & cập nhật sẽ tự động bật lên ngay lập tức!\n• ✍️ NHẬP TỰ DO TÊN FILE & TIỀN TỐ KHI SAO CHÉP: Đã bỏ danh sách lựa chọn cố định ở mục Đổi tên file. Giờ đây bạn có thể thoải mái nhập bất kỳ tên hoặc tiền tố nào muốn đổi (VD: HoangDiep, DamCuoiA_B...). Phần mềm tự động giữ an toàn số đuôi file gốc chống ghi đè!\n• 🌟 NÂNG CẤP NÚT BẢNG THÔNG TIN NỔI BẬT: Các nút Kiểm Tra Cập Nhật, GitHub, Facebook và Đóng trong bảng thông tin được thiết kế lại với màu sắc tươi sáng, chữ in đậm tương phản cao cực kỳ rõ nét và chuyên nghiệp.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.5/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.4.5/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
+  "latestVersion": "1.5.0",
+  "releaseDate": "17/10/2026",
+  "title": "Chép Thẻ Nhanh Pro v1.5.0 - Tab 3 Google Drive Pro & Quản Lý Đám Mây",
+  "changelog": "• ☁️ TAB 3: GOOGLE DRIVE PRO (CLOUD STUDIO EXPLORER): Tích hợp trực tiếp Google Drive vào phần mềm với giao diện tương tự Windows Explorer cực kỳ mượt mà và trực quan.\n• 🖱️ KÉO THẢ TẢI LÊN SIÊU TỐC (DRAG & DROP): Hỗ trợ kéo thả trực tiếp file hoặc cả cây thư mục ảnh từ Windows Explorer bên ngoài vào app để tải lên Google Drive ngay tức khắc.\n• 📂 THAO TÁC FILE ĐẦY ĐỦ NHƯ WINDOWS EXPLORER: Đổi tên (F2), Xóa vào thùng rác (Delete), Tạo thư mục mới, Sao chép (Ctrl+C), Cắt/Di chuyển (Ctrl+X), Dán (Ctrl+V) xử lý trực tiếp trên server Google Drive cực nhanh.\n• 🔗 1-CLICK CHIA SẺ LINK CÔNG KHAI: Tạo quyền chia sẻ 'Bất kỳ ai có link đều xem được' và tự động sao chép link chia sẻ vào Clipboard chỉ với 1 cú click để gửi ngay cho khách hàng.\n• ⚡ 1-CLICK [☁️ UP LÊN DRIVE] TỪ TAB LỌC ẢNH: Sau khi lọc ảnh xong, chỉ cần bấm nút [☁️ Up Lên Drive] là phần mềm tự động nạp thư mục ảnh đã lọc lên Google Drive và chuyển ngay sang Tab Driver Pro.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.5.0/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.5.0/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip"
 }
