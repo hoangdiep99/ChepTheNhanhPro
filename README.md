@@ -46,9 +46,12 @@
 * ☁️ **Nút 1-Click [Up Lên Drive]**: Lọc ảnh xong bấm 1 nút là tự động nạp thẳng toàn bộ thư mục ảnh đã lọc lên Google Drive mà không cần mở trình duyệt web.
 
 ### ☁️ 3. Google Drive Pro - Trình Quản Lý Đám Mây Phong Cách AirExplorer (Tab 3)
+* 🖼️ **Nạp & Hiển Thị Ảnh Thu Nhỏ (Thumbnails) Thật**: Tự động tải và hiển thị hình ảnh thu nhỏ thực tế trong mọi chế độ xem cho tất cả các định dạng ảnh chụp (JPG, PNG, WebP, RAW Nikon NEF, Canon CR2/CR3, Sony ARW,...). Tích hợp bộ đệm lưu trữ cục bộ (disk cache) giúp lướt xem ảnh mượt mà, tức thì không độ trễ.
+* 👁️ **Trình Xem Ảnh Studio (Photo Viewer) Chuyên Nghiệp**: Nhấp đúp vào bất kỳ bức ảnh nào để mở giao diện xem ảnh điện ảnh nền tối chuẩn Studio; hỗ trợ phím mũi tên (`←`/`→` hoặc `A`/`D`) chuyển ảnh cực nhanh, phóng to thu nhỏ (Zoom In/Out/Vừa màn hình/100%), xoay ảnh, 1-click copy link công khai gửi khách qua Zalo/Facebook và tải trực tiếp file gốc về máy.
+* ✨ **Giao Diện Tương Phản Cao & Dễ Nhìn Tuyệt Đối**: Khắc phục triệt để lỗi màu chữ khi chọn mục ở chế độ Sáng (Light Theme); áp dụng bảng màu xanh dương êm dịu, tương phản sắc nét, chữ đậm rõ ràng cho cả chế độ Sáng và Tối.
+* 📁 **Thư Mục Vector Vàng Kim 3D Rực Rỡ**: Nâng cấp biểu tượng thư mục dạng vector vàng kim hiện đại chuẩn phong cách AirExplorer và Windows 11, sắc nét trên mọi màn hình độ phân giải cao.
 * 🗂️ **Giao diện 2 cột chuẩn AirExplorer**: Cây Thư Mục (TreeView) bên trái giúp xem toàn bộ cấu trúc thư mục dạng cây, mở rộng nhánh mượt mà; thanh kéo giãn Splitter tùy chỉnh độ rộng linh hoạt.
 * 👁️ **Thay đổi chế độ xem chuẩn Windows Explorer**: Tùy chọn 6 chế độ xem: Biểu tượng lớn (Large icons), Biểu tượng vừa (Medium icons), Biểu tượng nhỏ (Small icons), Danh sách (List), Chi tiết (Details), Xếp ô (Tiles).
-* 📁 **Chế độ Biểu tượng lớn (Large Icons)**: Hiển thị các thư mục vàng nổi bật và tệp tin dạng ô vuông sắc nét, nhấp đúp để duyệt sâu vào trong thư mục con tương tự AirExplorer.
 * 📊 **Thanh trạng thái thời gian thực**: Hiển thị tức thì tổng số mục trong thư mục hiện tại (XX mục) và số dung lượng lưu trữ còn trống (XX GB trống).
 * 🖱️ **Kéo Thả Tải Lên Siêu Tốc (Drag & Drop Explorer)**: Kéo file hoặc kéo cả cây thư mục ảnh từ Windows Explorer bên ngoài thả trực tiếp vào app để tải lên Drive ngay tức khắc.
 * 📂 **Thao Tác File & Thư Mục Đầy Đủ**: Mở thư mục con, Lùi (`Backspace`), Tiến, Lên, Tạo thư mục mới, Đổi tên (`F2`), Xóa vào thùng rác (`Delete`).
