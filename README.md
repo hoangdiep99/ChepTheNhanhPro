@@ -46,6 +46,12 @@
 * ☁️ **Nút 1-Click [Up Lên Drive]**: Lọc ảnh xong bấm 1 nút là tự động nạp thẳng toàn bộ thư mục ảnh đã lọc lên Google Drive mà không cần mở trình duyệt web.
 
 ### ☁️ 3. Google Drive Pro - Trình Quản Lý Đám Mây Song Song Chuẩn AirExplorer (Tab 3)
+* ⚡ **Động Cơ Truyền Tải Đa Luồng Song Song (Multi-Threaded Parallel Engine)**: Tùy chọn 2, 4, 6 đến 8 luồng tải đồng thời qua `SemaphoreSlim`; tăng tốc độ tải lên/tải về gấp nhiều lần, đo tốc độ mạng thời gian thực (MB/s) và tính toán thời gian còn lại (ETA) chính xác.
+* 🌲 **Bảo Toàn Trọn Vẹn Cây Thư Mục Con (Preserve Subfolder Tree)**: Khi kéo thả hoặc tải cả cây thư mục lớn có nhiều cấp con (Album, Ngày, RAW, JPG), hệ thống tự động quét và tạo đúng từng cấp thư mục tương ứng trên Google Drive thay vì đổ phẳng (flatten).
+* 🛡️ **Chống Trùng File Thông Minh (Skip Existing Duplicates)**: Tự động kiểm tra file đã tồn tại trên Drive trước khi tải để tự động bỏ qua (Skip), tránh nhân đôi dữ liệu và tiết kiệm tối đa thời gian khi up bù show dở.
+* 📊 **Bảng Quản Lý Truyền Tải (Transfer Manager Drawer)**: Ngăn kéo tiến trình thu gọn/mở rộng tiện lợi ở đáy; hiển thị chi tiết từng tệp tin, thanh % tiến độ, tốc độ thời gian thực, trạng thái (Chờ, Đang tải, Hoàn tất, Bỏ qua, Lỗi), cùng nút Tạm dừng / Tiếp tục / Tải lại file lỗi / Dọn sạch.
+* ⬅ **Tải Về Máy 2 Chiều Đối Xứng (Nút [⬅ Tải Về Máy])**: Tải các file hoặc cả cây thư mục đang chọn trên Google Drive về đúng thư mục máy tính đang mở ở bảng bên phải qua đa luồng.
+* 🏷️ **Thanh Lọc Định Dạng Nhanh (Filter Chips)**: Bổ sung thanh lọc nhanh 1-click (`Tất cả`, `🖼️ JPG`, `📸 RAW`, `🎬 Video`, `📁 Thư mục`) cho cả bảng Google Drive và bảng Máy tính PC.
 * ◫ **Giao Diện 2 Cửa Sổ Song Song (Dual-Pane AirExplorer)**: Tích hợp bảng duyệt tệp máy tính (This PC / Ổ C, D, E, USB) song song với Google Drive; duyệt ảnh cục bộ, chọn nhiều file và bấm `[⬆ Tải Sang Drive ➔]` hoặc kéo thả (Drag & Drop) trực tiếp sang Drive cực nhanh.
 * 🖱️ **Zoom Theo Con Trỏ Chuột & Kéo Ảnh (Pan) Siêu Mượt**: Phóng to thu nhỏ ảnh định tâm chính xác tuyệt đối tại vị trí con trỏ chuột; ấn giữ chuột trái để kéo (pan) ảnh tiện lợi và mượt mà.
 * 🖼️ **Tự Động Cân Chỉnh Vừa Cửa Sổ (Auto-Fit)**: Mở bất kỳ bức ảnh nào (ảnh dọc chân dung, ảnh ngang đại tiệc), ảnh lập tức hiển thị vừa vặn trọn vẹn trong cửa sổ xem ảnh mà không bị tràn viền hay phải zoom-out thủ công.
