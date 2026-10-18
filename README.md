@@ -46,6 +46,7 @@
 * ☁️ **Nút 1-Click [Up Lên Drive]**: Lọc ảnh xong bấm 1 nút là tự động nạp thẳng toàn bộ thư mục ảnh đã lọc lên Google Drive mà không cần mở trình duyệt web.
 
 ### ☁️ 3. Google Drive Pro - Trình Quản Lý Đám Mây Song Song Chuẩn AirExplorer (Tab 3)
+* ⚡ **Tải Siêu Tốc Bằng Link Google Drive (Không Cần Chờ Google Nén Zip)**: Xóa bỏ 100% nỗi ức chế khi tải các thư mục chứa hàng chục GB ảnh RAW/Video trên trình duyệt web phải chờ Google nén zip hàng tiếng đồng hồ hoặc bị chia nhỏ thành nhiều file zip lỗi hỏng. Chỉ cần dán link thư mục Drive vào phần mềm (nút `[🔗 Tải Bằng Link]`), hệ thống tự động quét toàn bộ file và tải trực tiếp từng file về máy tính qua đa luồng song song cực nhanh!
 * ⚡ **Động Cơ Truyền Tải Đa Luồng Song Song (Multi-Threaded Parallel Engine)**: Tùy chọn 2, 4, 6 đến 8 luồng tải đồng thời qua `SemaphoreSlim`; tăng tốc độ tải lên/tải về gấp nhiều lần, đo tốc độ mạng thời gian thực (MB/s) và tính toán thời gian còn lại (ETA) chính xác.
 * 🌲 **Bảo Toàn Trọn Vẹn Cây Thư Mục Con (Preserve Subfolder Tree)**: Khi kéo thả hoặc tải cả cây thư mục lớn có nhiều cấp con (Album, Ngày, RAW, JPG), hệ thống tự động quét và tạo đúng từng cấp thư mục tương ứng trên Google Drive thay vì đổ phẳng (flatten).
 * 🛡️ **Chống Trùng File Thông Minh (Skip Existing Duplicates)**: Tự động kiểm tra file đã tồn tại trên Drive trước khi tải để tự động bỏ qua (Skip), tránh nhân đôi dữ liệu và tiết kiệm tối đa thời gian khi up bù show dở.
