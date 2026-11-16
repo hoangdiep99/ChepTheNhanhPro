@@ -25,6 +25,9 @@
 ## ✨ Tính Năng Nổi Bật
 
 ### ⚡ 1. Đổ Thẻ & Sao Chép Dữ Liệu Tốc Độ Cao (Tab 1)
+* 🛡️ **Cơ Chế Chống Văng Thẻ & Tự Bù Giờ Kết Nối Lại (15s Grace Period)**: Khắc phục sự cố thẻ nhớ dung lượng lớn (128GB, 256GB) bị sụt nguồn cổng USB hoặc nóng đầu đọc văng thẻ giữa chừng (~50%). Ứng dụng tự động tạm dừng luồng I/O trong 15s để thẻ nhận diện lại rồi tiếp tục sao chép ngay lập tức mà không gây lỗi đứt gãy.
+* 📑 **Báo Cáo Gián Đoạn Cứu Sinh (ingest_interrupted_report.txt)**: Ngay cả khi bị rút thẻ đột ngột hoặc mất điện, app vẫn tức thì tạo file báo cáo gián đoạn ghi rõ số file đã băm xxHash64 an toàn, danh sách file còn thiếu và hướng dẫn cắm lại thẻ bấm Đổ Tiếp (Incremental Ingest) mà không phải chép lại từ đầu.
+* 📝 **Nhật Ký Thời Gian Thực Lưu Vĩnh Viễn Trên Ổ Cứng (Real-Time Persistent Log)**: Mọi biến động I/O, cắm/rút thiết bị và mã băm xxHash64 đều được ghi tức thì ra đĩa (`%LocalAppData%\PhotoIngestTool\Logs\app_yyyy-MM-dd.log`), kèm nút `[📄 Xem Log]` và `[📂 Thư mục Log]` trực quan trên giao diện.
 * 🚀 **Tự động nhận diện thẻ nhớ (Hot-plug Auto-Reload)**: Cắm thẻ nhớ SD, CFexpress, XQD hoặc Box SSD rời là phần mềm tự động bật lên và nạp dữ liệu ngay lập tức.
 * 🛡️ **Sao chép Dual-Backup song song**: Đổ thẻ đồng thời vào 2 ổ cứng (Ổ làm việc + Ổ lưu trữ dự phòng) trong cùng một lượt chép.
 * 🔒 **Xác thực mã băm xxHash64 siêu tốc**: Kiểm tra tính toàn vẹn 100% từng file sau khi sao chép, loại bỏ hoàn toàn nguy cơ hỏng file RAW hay sai lệch dữ liệu.
