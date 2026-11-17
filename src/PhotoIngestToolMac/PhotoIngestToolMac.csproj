@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <RuntimeIdentifiers>osx-arm64;osx-x64</RuntimeIdentifiers>
+    <ApplicationTitle>Chép Thẻ Nhanh Pro</ApplicationTitle>
+    <AssemblyName>PhotoIngestToolMac</AssemblyName>
+    <RootNamespace>PhotoIngestTool</RootNamespace>
+    <Version>1.7.0</Version>
+    <Authors>Hoàng Điệp</Authors>
+    <Company>Hoàng Điệp Studio</Company>
+    <Product>Chép Thẻ Nhanh Pro (macOS Edition)</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="camera_profiles.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.10" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="MetadataExtractor" Version="2.8.1" />
+    <PackageReference Include="Standart.Hash.xxHash" Version="4.0.5" />
+  </ItemGroup>
+</Project>

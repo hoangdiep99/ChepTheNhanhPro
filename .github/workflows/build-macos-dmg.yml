@@ -1,0 +1,158 @@
+name: Build macOS DMG
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/PhotoIngestToolMac/**'
+      - '.github/workflows/build-macos-dmg.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-dmg:
+    name: Build & Package macOS DMG
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install create-dmg
+        run: brew install create-dmg
+
+      - name: Publish .NET for Apple Silicon (osx-arm64)
+        run: |
+          dotnet publish src/PhotoIngestToolMac/PhotoIngestToolMac.csproj \
+            -c Release \
+            -r osx-arm64 \
+            --self-contained true \
+            -p:PublishSingleFile=true \
+            -p:IncludeNativeLibrariesForSelfExtract=true \
+            -o publish/arm64
+
+      - name: Publish .NET for Intel (osx-x64)
+        run: |
+          dotnet publish src/PhotoIngestToolMac/PhotoIngestToolMac.csproj \
+            -c Release \
+            -r osx-x64 \
+            --self-contained true \
+            -p:PublishSingleFile=true \
+            -p:IncludeNativeLibrariesForSelfExtract=true \
+            -o publish/x64
+
+      - name: Construct .app Bundles
+        run: |
+          create_bundle() {
+            local arch=$1
+            local src_dir=$2
+            local bundle_dir="bundle_${arch}/Chép Thẻ Nhanh Pro.app"
+
+            mkdir -p "${bundle_dir}/Contents/MacOS"
+            mkdir -p "${bundle_dir}/Contents/Resources"
+
+            cp -R ${src_dir}/* "${bundle_dir}/Contents/MacOS/"
+            rm -f "${bundle_dir}/Contents/MacOS/"*.pdb
+
+            if [ -f "src/PhotoIngestToolMac/Assets/app_logo.png" ]; then
+              cp "src/PhotoIngestToolMac/Assets/app_logo.png" "${bundle_dir}/Contents/Resources/app_logo.png"
+            fi
+
+            cat << 'EOF' > "${bundle_dir}/Contents/Info.plist"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>PhotoIngestToolMac</string>
+    <key>CFBundleIconFile</key>
+    <string>app_logo.png</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.hoangdiep.chepthenhanhpro</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Chép Thẻ Nhanh Pro</string>
+    <key>CFBundleDisplayName</key>
+    <string>Chép Thẻ Nhanh Pro</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.7.0</string>
+    <key>CFBundleVersion</key>
+    <string>1.7.0</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>11.0</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSRequiresAquaSystemAppearance</key>
+    <false/>
+</dict>
+</plist>
+EOF
+
+            echo "APPL????" > "${bundle_dir}/Contents/PkgInfo"
+            chmod +x "${bundle_dir}/Contents/MacOS/PhotoIngestToolMac"
+          }
+
+          create_bundle "arm64" "publish/arm64"
+          create_bundle "x64" "publish/x64"
+
+      - name: Build DMG for Apple Silicon (M1/M2/M3/M4)
+        run: |
+          mkdir -p output
+          create-dmg \
+            --volname "Chép Thẻ Nhanh Pro" \
+            --window-pos 200 120 \
+            --window-size 600 400 \
+            --icon-size 100 \
+            --icon "Chép Thẻ Nhanh Pro.app" 175 120 \
+            --hide-extension "Chép Thẻ Nhanh Pro.app" \
+            --app-drop-link 425 120 \
+            --no-internet-enable \
+            "output/ChepTheNhanhPro_MacOS_AppleSilicon_v1.7.0.dmg" \
+            "bundle_arm64/" || true
+
+          if [ ! -f "output/ChepTheNhanhPro_MacOS_AppleSilicon_v1.7.0.dmg" ]; then
+            hdiutil create -volname "Chép Thẻ Nhanh Pro" -srcfolder "bundle_arm64" -ov -format UDZO "output/ChepTheNhanhPro_MacOS_AppleSilicon_v1.7.0.dmg"
+          fi
+
+      - name: Build DMG for Intel Mac
+        run: |
+          create-dmg \
+            --volname "Chép Thẻ Nhanh Pro (Intel)" \
+            --window-pos 200 120 \
+            --window-size 600 400 \
+            --icon-size 100 \
+            --icon "Chép Thẻ Nhanh Pro.app" 175 120 \
+            --hide-extension "Chép Thẻ Nhanh Pro.app" \
+            --app-drop-link 425 120 \
+            --no-internet-enable \
+            "output/ChepTheNhanhPro_MacOS_Intel_v1.7.0.dmg" \
+            "bundle_x64/" || true
+
+          if [ ! -f "output/ChepTheNhanhPro_MacOS_Intel_v1.7.0.dmg" ]; then
+            hdiutil create -volname "Chép Thẻ Nhanh Pro (Intel)" -srcfolder "bundle_x64" -ov -format UDZO "output/ChepTheNhanhPro_MacOS_Intel_v1.7.0.dmg"
+          fi
+
+      - name: Upload DMGs as Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-dmgs
+          path: output/*.dmg
+
+      - name: Upload DMGs to GitHub Release v1.7.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload v1.7.0 output/ChepTheNhanhPro_MacOS_AppleSilicon_v1.7.0.dmg output/ChepTheNhanhPro_MacOS_Intel_v1.7.0.dmg --clobber -R ${{ github.repository }}

@@ -1,0 +1,582 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PhotoIngestTool.ViewModels"
+        x:Class="PhotoIngestTool.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Title="Chép Thẻ Nhanh Pro - Quản Lý File Ảnh Chuyên Nghiệp (macOS)"
+        Icon="avares://PhotoIngestToolMac/Assets/app_logo.png"
+        Width="980"
+        Height="680"
+        MinWidth="880"
+        MinHeight="600"
+        WindowStartupLocation="CenterScreen"
+        Background="#0F1117"
+        Foreground="#E5E9F0">
+
+    <Window.Styles>
+        <Style Selector="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#F8FAFC"/>
+        </Style>
+
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#1B1F2A"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#3B4254"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="7,4"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="MinHeight" Value="28"/>
+        </Style>
+
+        <Style Selector="ComboBox">
+            <Setter Property="Background" Value="#1B1F2A"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#3B4254"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="7,3"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="MinHeight" Value="28"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style Selector="CheckBox">
+            <Setter Property="Foreground" Value="#F8FAFC"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="Button.actionBtn">
+            <Setter Property="Background" Value="#252B3B"/>
+            <Setter Property="Foreground" Value="#E2E8F0"/>
+            <Setter Property="BorderBrush" Value="#363F54"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="Button.primaryBtn">
+            <Setter Property="Background" Value="#10B981"/>
+            <Setter Property="Foreground" Value="#07130E"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="16,7"/>
+            <Setter Property="FontSize" Value="12.5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style Selector="Button.warningBtn">
+            <Setter Property="Background" Value="#F59E0B"/>
+            <Setter Property="Foreground" Value="#111827"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="12,7"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+
+        <Style Selector="Button.dangerBtn">
+            <Setter Property="Background" Value="#EF4444"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="12,7"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+
+        <Style Selector="TabControl">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+
+        <Style Selector="TabItem">
+            <Setter Property="Foreground" Value="#94A3B8"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="16,6"/>
+            <Setter Property="Margin" Value="0,0,4,0"/>
+            <Setter Property="CornerRadius" Value="5,5,0,0"/>
+        </Style>
+        <Style Selector="TabItem:selected">
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#0284C7"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Margin="12,8,12,8" RowDefinitions="Auto,*">
+
+        <!-- 1. COMPACT STUDIO HEADER -->
+        <Border Grid.Row="0" Background="#161922" CornerRadius="6" Padding="12,6" Margin="0,0,0,8" BorderBrush="#252A36" BorderThickness="1">
+            <Grid ColumnDefinitions="Auto,Auto,*">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Source="avares://PhotoIngestToolMac/Assets/app_logo.png"
+                           Width="24" Height="24"
+                           Margin="0,0,8,0"/>
+                    <TextBlock Text="CHÉP THẺ NHANH PRO" FontSize="14" FontWeight="Bold" Foreground="#F8FAFC"/>
+                </StackPanel>
+
+                <Border Grid.Column="1" Background="#1E2433" BorderBrush="#2E364F" BorderThickness="1" CornerRadius="4" Padding="8,2" Margin="10,0,0,0">
+                    <TextBlock Text="{Binding MediaBreakdownText}" FontSize="11" FontWeight="SemiBold" Foreground="#38BDF8"/>
+                </Border>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Spacing="10">
+                    <Button Content="{Binding ThemeToggleText}"
+                            Classes="actionBtn"
+                            Padding="8,3"
+                            FontSize="11.5"
+                            ToolTip.Tip="Chuyển đổi giao diện Sáng / Tối"
+                            Command="{Binding ToggleThemeCommand}"/>
+                    <CheckBox Content="Âm báo" IsChecked="{Binding PlaySoundOnComplete, Mode=TwoWay}"/>
+                    <CheckBox Content="Chạy cùng macOS" IsChecked="{Binding IsStartupEnabled, Mode=TwoWay}" Command="{Binding ToggleStartupCommand}"/>
+                    <Button Content="ⓘ Thông tin"
+                            Classes="actionBtn"
+                            Padding="9,3"
+                            FontSize="11.5"
+                            Foreground="#38BDF8"
+                            ToolTip.Tip="Thông tin Tác giả Hoàng Điệp &amp; Hướng dẫn sử dụng Chép Thẻ Nhanh Pro"
+                            Click="OnAboutInfoClick"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- 2. MAIN WORKSPACE TABCONTROL -->
+        <TabControl Grid.Row="1" SelectedIndex="{Binding SelectedTabIndex}" Margin="0,4,0,0">
+
+            <!-- TAB 1: ĐỔ THẺ & SAO CHÉP -->
+            <TabItem Header="⚡ ĐỔ THẺ &amp; SAO CHÉP">
+                <Grid Margin="0,6,0,0" RowDefinitions="Auto,Auto,*,Auto">
+
+                    <!-- 2.1 MAIN CONFIGURATION PANELS (COMPACT 2 COLUMNS) -->
+                    <Grid Grid.Row="0" Margin="0,0,0,8" ColumnDefinitions="1.15*,8,1*">
+
+                        <!-- LEFT CARD: NGUỒN THẺ & Ổ CỨNG ĐÍCH + DUNG LƯỢNG TRỐNG -->
+                        <Border Grid.Column="0" Background="#161922" CornerRadius="6" Padding="11,9" BorderBrush="#252A36" BorderThickness="1">
+                            <StackPanel>
+                                <TextBlock Text="1. NGUỒN THẺ NHỚ &amp; THƯ MỤC ĐÍCH" FontSize="11.5" FontWeight="Bold" Foreground="#38BDF8" Margin="0,0,0,7"/>
+
+                                <!-- Source Drive -->
+                                <Grid Margin="0,0,0,6" ColumnDefinitions="95,*,Auto,Auto">
+                                    <TextBlock Text="Thẻ nhớ / Nguồn:" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding SourcePath, Mode=TwoWay}" Watermark="/Volumes/EOS_DIGITAL..."/>
+                                    <Button Grid.Column="2" Content="Chọn" Classes="actionBtn" Margin="5,0,0,0" Click="OnBrowseSourceClick"/>
+                                    <Button Grid.Column="3" Content="Quét" Classes="actionBtn" Margin="4,0,0,0" Command="{Binding ScanSourceFolderCommand}"/>
+                                </Grid>
+
+                                <!-- Primary Destination -->
+                                <Grid Margin="0,0,0,4" ColumnDefinitions="95,*,Auto">
+                                    <TextBlock Text="Ổ cứng chính:" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding PrimaryRootFolder, Mode=TwoWay}"/>
+                                    <Button Grid.Column="2" Content="Chọn" Classes="actionBtn" Margin="5,0,0,0" Click="OnBrowsePrimaryClick"/>
+                                </Grid>
+
+                                <!-- PROMINENT DISK FREE SPACE METER FOR PRIMARY DRIVE -->
+                                <Border Background="#11141C" CornerRadius="4" Padding="8,5" Margin="95,0,0,6" BorderBrush="#222938" BorderThickness="1">
+                                    <StackPanel>
+                                        <Grid Margin="0,0,0,3" ColumnDefinitions="*,Auto">
+                                            <TextBlock Grid.Column="0" Text="{Binding PrimaryDriveSpaceText}" FontSize="11" FontWeight="SemiBold" Foreground="#34D399"/>
+                                            <TextBlock Grid.Column="1" Text="{Binding PrimaryDriveAfterCopyText}" FontSize="10.5" Foreground="#94A3B8" HorizontalAlignment="Right"/>
+                                        </Grid>
+                                        <ProgressBar Height="5" Minimum="0" Maximum="100"
+                                                     Value="{Binding PrimaryDriveUsedPercentage, Mode=OneWay}"
+                                                     Background="#232936" Foreground="#10B981"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- Dual Backup -->
+                                <Grid Margin="0,0,0,6" ColumnDefinitions="95,*,Auto">
+                                    <CheckBox Content="Dual Backup:" IsChecked="{Binding EnableDualBackup, Mode=TwoWay}" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding BackupRootFolder, Mode=TwoWay}" IsEnabled="{Binding EnableDualBackup}"
+                                             ToolTip.Tip="{Binding BackupDriveSpaceText}"/>
+                                    <Button Grid.Column="2" Content="Chọn" Classes="actionBtn" Margin="5,0,0,0" IsEnabled="{Binding EnableDualBackup}" Click="OnBrowseBackupClick"/>
+                                </Grid>
+
+                                <!-- Client & JobType -->
+                                <Grid Margin="0,0,0,6" ColumnDefinitions="95,1.25*,62,1*">
+                                    <TextBlock Text="Tên Khách:" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1"
+                                             x:Name="ClientNameTextBox"
+                                             Text="{Binding ClientName, Mode=TwoWay}"
+                                             Watermark="Nhập tên khách..."
+                                             ToolTip.Tip="Mỗi lần mở ứng dụng ô Tên Khách sẽ để trống để bạn chủ động nhập tên khách mới"/>
+                                    <TextBlock Grid.Column="2" Text="Loại Job:" Foreground="#94A3B8" HorizontalAlignment="Right" Margin="0,0,6,0"/>
+                                    <ComboBox Grid.Column="3" ItemsSource="{Binding JobTypes}" SelectedItem="{Binding JobType, Mode=TwoWay}"/>
+                                </Grid>
+
+                                <!-- ShootDate & MultiCam -->
+                                <Grid Margin="0,0,0,6" ColumnDefinitions="95,145,*">
+                                    <TextBlock Text="Ngày chụp:" Foreground="#94A3B8"/>
+                                    <CalendarDatePicker Grid.Column="1"
+                                                        SelectedDate="{Binding ShootDate, Mode=TwoWay}"
+                                                        CustomDateFormatString="dd/MM/yyyy"
+                                                        SelectedDateFormat="Custom"
+                                                        HorizontalAlignment="Stretch"/>
+                                    <CheckBox Grid.Column="2" Content="Nhiều máy (Cam_Thợ_Model)"
+                                              IsChecked="{Binding IsMultiCamera, Mode=TwoWay}" Margin="10,0,0,0"/>
+                                </Grid>
+
+                                <!-- Smart Rename -->
+                                <Grid ColumnDefinitions="95,165,*">
+                                    <CheckBox Grid.Column="0" Content="Đổi tên file:" IsChecked="{Binding EnableCustomRename, Mode=TwoWay}" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding RenameTemplate, Mode=TwoWay}"
+                                             Watermark="Tên file hoặc tiền tố..."
+                                             IsEnabled="{Binding EnableCustomRename}" FontSize="11" VerticalContentAlignment="Center"
+                                             ToolTip.Tip="Nhập tên mới hoặc tiền tố tự do (VD: HoangDiep hoặc TenAnh_{Original})"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding PreviewRenamedFileText}" Foreground="#38BDF8" FontSize="11" Margin="8,0,0,0" TextTrimming="CharacterEllipsis"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- RIGHT CARD: EXIF, PHOTOGRAPHER PROFILE & SAFE INGEST OPTIONS -->
+                        <Border Grid.Column="2" Background="#161922" CornerRadius="6" Padding="11,9" BorderBrush="#252A36" BorderThickness="1">
+                            <StackPanel>
+                                <Grid Margin="0,0,0,8" ColumnDefinitions="*,Auto">
+                                    <TextBlock Grid.Column="0" Text="2. NHẬN DIỆN THỢ (EXIF) &amp; CHẾ ĐỘ ĐỔ THẺ AN TOÀN" FontSize="11.5" FontWeight="Bold" Foreground="#34D399"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding BackupDriveSpaceText}" HorizontalAlignment="Right" FontSize="10.5" Foreground="#64748B"/>
+                                </Grid>
+
+                                <!-- Camera Make & Model -->
+                                <Grid Margin="0,0,0,8" ColumnDefinitions="100,*,Auto">
+                                    <TextBlock Text="Dòng máy ảnh:" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding CameraModel, Mode=TwoWay}"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding CameraMake}" Foreground="#38BDF8" FontSize="11" FontWeight="SemiBold" Margin="8,0,2,0"/>
+                                </Grid>
+
+                                <!-- Body Serial -->
+                                <Grid Margin="0,0,0,8" ColumnDefinitions="100,*,Auto,Auto">
+                                    <TextBlock Text="Body Serial:" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding CameraSerialNumber, Mode=TwoWay}"/>
+                                    <Button Grid.Column="2" Content="Lưu Thợ" Classes="actionBtn" Margin="5,0,0,0"
+                                            Command="{Binding SaveCameraProfileCommand}" ToolTip.Tip="Lưu vĩnh viễn Serial và Tên thợ"/>
+                                    <Button Grid.Column="3" Content="JSON" Classes="actionBtn" Margin="4,0,0,0"
+                                            Command="{Binding OpenProfilesFileCommand}" ToolTip.Tip="Mở file camera_profiles.json"/>
+                                </Grid>
+
+                                <!-- Photographer Name -->
+                                <Grid Margin="0,0,0,10" ColumnDefinitions="100,*">
+                                    <TextBlock Text="Thợ phụ trách:" Foreground="#94A3B8"/>
+                                    <TextBox Grid.Column="1" Text="{Binding PhotographerName, Mode=TwoWay}"/>
+                                </Grid>
+
+                                <!-- Safe Copy, Subfolder Split & Card Date Check Card -->
+                                <Border Background="#11141C" CornerRadius="4" Padding="10,8" BorderBrush="#222938" BorderThickness="1">
+                                    <StackPanel Spacing="4">
+                                        <CheckBox Content="Tự động phân loại vào thư mục con RAW / JPG / Video"
+                                                  IsChecked="{Binding SplitByFileType, Mode=TwoWay}"
+                                                  Foreground="#38BDF8" FontWeight="SemiBold"
+                                                  ToolTip.Tip="Mặc định bật sẵn: Tự động chia ảnh RAW, JPG và Video vào các thư mục con riêng biệt. Bỏ tích nếu muốn đổ chung vào 1 thư mục."/>
+                                        <CheckBox Content="Bỏ qua file có sẵn tránh ghi đè"
+                                                  IsChecked="{Binding IncrementalSkipExisting, Mode=TwoWay}"
+                                                  Foreground="#34D399"
+                                                  ToolTip.Tip="Tự động bỏ qua các file đã có sẵn trong thư mục đích (khớp tên và dung lượng byte) để tránh ghi đè"/>
+                                        <CheckBox Content="Tự động ngắt thẻ nhớ an toàn (Auto-Eject) sau khi Verify"
+                                                  IsChecked="{Binding AutoEjectAfterIngest, Mode=TwoWay}"
+                                                  Foreground="#CBD5E1"/>
+                                        <CheckBox Content="🛡️ Chống nóng Box SSD NVMe (Thermal Guard - Hãm sốc nhiệt 15°C)"
+                                                  IsChecked="{Binding EnableThermalGuard, Mode=TwoWay}"
+                                                  Foreground="#FBBF24"
+                                                  ToolTip.Tip="Tự động chèn khoảng nghỉ vi mô 15ms sau các block dữ liệu lớn để vỏ nhôm Box NVMe kịp tản nhiệt, chống quá nhiệt sụt nguồn"/>
+
+                                        <!-- MULTI-DATE WARNING / STATUS BANNER WITH FILTER BUTTON -->
+                                        <Border CornerRadius="3" Padding="6,3" BorderThickness="1" Background="#151924" BorderBrush="#1E2638" Cursor="Hand" PointerPressed="OnCardDatesBannerClick">
+                                            <Grid ColumnDefinitions="*,Auto">
+                                                <TextBlock Grid.Column="0"
+                                                           Text="{Binding CardDatesStatusText}"
+                                                           FontSize="10.5"
+                                                           VerticalAlignment="Center"
+                                                           FontWeight="SemiBold"
+                                                           Foreground="#FBBF24"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding CardDatesStatusText}"/>
+                                                <Button Grid.Column="1"
+                                                        Content="📅 Chọn Ngày"
+                                                        Classes="actionBtn"
+                                                        Foreground="#FBBF24"
+                                                        BorderBrush="#D97706"
+                                                        Padding="6,1"
+                                                        FontSize="10"
+                                                        Margin="6,0,0,0"
+                                                        Click="OnOpenDateFilterClick"
+                                                        ToolTip.Tip="Mở bảng chọn riêng các ngày chụp cần copy"/>
+                                            </Grid>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+
+                    <!-- 2.2 DESTINATION PATH PREVIEW BANNER -->
+                    <Border Grid.Row="1" Background="#131620" CornerRadius="5" Padding="11,6" Margin="0,0,0,8" BorderBrush="#252A36" BorderThickness="1">
+                        <Grid ColumnDefinitions="85,*" RowDefinitions="Auto,Auto">
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Thư mục đích:" Foreground="#94A3B8" FontSize="11"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding PreviewDestinationPath}" Foreground="#38BDF8" FontWeight="SemiBold" FontSize="11.5" TextTrimming="CharacterEllipsis"/>
+
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Ổ Backup:" Foreground="#64748B" FontSize="11" Margin="0,2,0,0"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding PreviewBackupPath}" Foreground="#10B981" FontSize="11" Margin="0,2,0,0" TextTrimming="CharacterEllipsis"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- 2.3 ACTIVITY LOGS & HASH VERIFICATION -->
+                    <Border Grid.Row="2" Background="#161922" CornerRadius="6" Padding="11,8" Margin="0,0,0,8" BorderBrush="#252A36" BorderThickness="1">
+                        <Grid RowDefinitions="Auto,*">
+                            <Grid Grid.Row="0" Margin="0,0,0,6" ColumnDefinitions="*,Auto">
+                                <TextBlock Grid.Column="0" Text="NHẬT KÝ HOẠT ĐỘNG &amp; KIỂM TRA xxHash64" FontSize="11" FontWeight="Bold" Foreground="#94A3B8"/>
+
+                                <Border Grid.Column="1" Background="#11141C" BorderBrush="#232B3E" BorderThickness="1" CornerRadius="4" Padding="9,3">
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8">
+                                        <TextBlock Text="💾" FontSize="11"/>
+                                        <TextBlock Text="{Binding SourceDriveCapacityText}" FontSize="11" Foreground="#38BDF8" FontWeight="SemiBold"/>
+                                        <ProgressBar Width="95" Height="6" Minimum="0" Maximum="100"
+                                                     Value="{Binding SourceDriveUsedPercentage, Mode=OneWay}"
+                                                     Background="#232936" Foreground="#38BDF8"
+                                                     VerticalAlignment="Center"/>
+                                        <TextBlock Text="{Binding DetectedFileCount, StringFormat='• {0} file'}" FontSize="11" Foreground="#34D399" FontWeight="SemiBold"/>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+
+                            <ListBox Grid.Row="1"
+                                     ItemsSource="{Binding ActivityLogs}"
+                                     Background="#0B0D13"
+                                     Foreground="#CBD5E1"
+                                     BorderBrush="#222735"
+                                     BorderThickness="1"
+                                     FontFamily="Menlo, Monaco, Consolas"
+                                     FontSize="11.5"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- 2.4 PROGRESS BAR & ACTION CONTROLS (PAUSE / RESUME / CANCEL / START) -->
+                    <Border Grid.Row="3" Background="#161922" CornerRadius="6" Padding="12,9" BorderBrush="#252A36" BorderThickness="1">
+                        <Grid ColumnDefinitions="*,Auto">
+
+                            <!-- Progress + Speed + ETA + Queue -->
+                            <StackPanel Grid.Column="0" Margin="0,0,14,0" VerticalAlignment="Center">
+                                <Grid Margin="0,0,0,5" ColumnDefinitions="*,Auto">
+                                    <TextBlock Grid.Column="0" Text="{Binding CurrentPhaseText}" Foreground="#F8FAFC" FontWeight="SemiBold" FontSize="12" TextTrimming="CharacterEllipsis"/>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6">
+                                        <TextBlock Text="Tốc độ:" Foreground="#94A3B8" FontSize="11.5"/>
+                                        <TextBlock Text="{Binding TransferSpeedText}" Foreground="#34D399" FontWeight="Bold" FontSize="12"/>
+                                        <TextBlock Text="| ETA:" Foreground="#94A3B8" FontSize="11.5"/>
+                                        <TextBlock Text="{Binding EtaText}" Foreground="#38BDF8" FontWeight="Bold" FontSize="12"/>
+                                        <TextBlock Text="{Binding PendingJobsInQueue, StringFormat='| Hàng đợi: {0}'}" Foreground="#FBBF24" FontWeight="SemiBold" FontSize="11.5"/>
+                                    </StackPanel>
+                                </Grid>
+
+                                <ProgressBar Height="10"
+                                             Minimum="0"
+                                             Maximum="100"
+                                             Value="{Binding ProgressPercentage}"
+                                             Background="#222735"
+                                             Foreground="#10B981"/>
+                            </StackPanel>
+
+                            <!-- Action Buttons -->
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Spacing="6">
+                                <Button Content="📜 Lịch Sử"
+                                        Classes="actionBtn"
+                                        Padding="10,7"
+                                        Foreground="#FBBF24"
+                                        ToolTip.Tip="Tra cứu nhanh danh sách các Job đã đổ thẻ &amp; mở lại thư mục khách hàng"
+                                        Click="OnOpenHistoryClick"/>
+
+                                <Button Content="Mở Thư Mục Đích"
+                                        Classes="actionBtn"
+                                        Padding="10,7"
+                                        Command="{Binding OpenDestinationFolderCommand}"/>
+
+                                <Button Content="Xem Báo Cáo"
+                                        Classes="actionBtn"
+                                        Padding="10,7"
+                                        Command="{Binding OpenLastReportCommand}"/>
+
+                                <Button Content="{Binding PauseButtonText}"
+                                        Classes="warningBtn"
+                                        IsEnabled="{Binding IsJobRunning}"
+                                        Command="{Binding TogglePauseJobCommand}"/>
+
+                                <Button Content="Hủy Job"
+                                        Classes="dangerBtn"
+                                        IsEnabled="{Binding IsJobRunning}"
+                                        Command="{Binding CancelCurrentJobCommand}"/>
+
+                                <Button Content="BẮT ĐẦU COPY"
+                                        Classes="primaryBtn"
+                                        Click="OnStartIngestClick"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <!-- TAB 2: LỌC ẢNH THEO MÃ -->
+            <TabItem Header="🔍 LỌC ẢNH THEO MÃ">
+                <Grid DataContext="{Binding FilterViewModel}" Margin="0,6,0,0" RowDefinitions="Auto,Auto,Auto,Auto,*,Auto">
+
+                    <!-- 1. CARD CẤU HÌNH LỌC ẢNH -->
+                    <Border Grid.Row="0" Background="#161922" CornerRadius="6" Padding="12,10" Margin="0,0,0,8" BorderBrush="#252A36" BorderThickness="1">
+                        <StackPanel>
+                            <TextBlock Text="CẤU HÌNH LỌC ẢNH HÀNG LOẠT" FontSize="11.5" FontWeight="Bold" Foreground="#38BDF8" Margin="0,0,0,8"/>
+
+                            <!-- Thư mục nguồn -->
+                            <Grid Margin="0,0,0,6" ColumnDefinitions="125,*,Auto,Auto">
+                                <TextBlock Text="Thư mục cần lọc:" Foreground="#94A3B8"/>
+                                <TextBox Grid.Column="1" Text="{Binding SourceDirectory, Mode=TwoWay}"/>
+                                <Button Grid.Column="2" Content="Chọn" Classes="actionBtn" Margin="6,0,0,0" Click="OnBrowseFilterSourceClick"/>
+                                <Button Grid.Column="3" Content="⚡ Lấy Thư Mục Vừa Đổ" Classes="actionBtn" Foreground="#38BDF8" Margin="6,0,0,0"
+                                        Command="{Binding SyncFromIngestCommand}"
+                                        ToolTip.Tip="Tự động đồng bộ đường dẫn thư mục đích vừa đổ thẻ ở Tab 1 sang đây"/>
+                            </Grid>
+
+                            <!-- Thư mục đích -->
+                            <Grid Margin="0,0,0,6" ColumnDefinitions="125,*,Auto">
+                                <TextBlock Text="Lưu ảnh tại:" Foreground="#94A3B8"/>
+                                <TextBox Grid.Column="1" Text="{Binding DestinationDirectory, Mode=TwoWay}"/>
+                                <Button Grid.Column="2" Content="Chọn" Classes="actionBtn" Margin="6,0,0,0" Click="OnBrowseFilterDestinationClick"/>
+                            </Grid>
+
+                            <!-- Lọc theo định dạng & Tạo thư mục con -->
+                            <Grid Margin="0,0,0,4" ColumnDefinitions="125,*,12,Auto,180">
+                                <TextBlock Text="Định dạng cần lọc:" Foreground="#94A3B8"/>
+                                <TextBox Grid.Column="1" Text="{Binding FileTypes, Mode=TwoWay}"
+                                         Watermark="Nhập đuôi file (VD: arw, cr3, jpg) hoặc bấm chọn nhanh bên dưới"/>
+                                <CheckBox Grid.Column="3" Content="Tạo thư mục con:" IsChecked="{Binding CreateSubfolder, Mode=TwoWay}" Margin="0,0,6,0"/>
+                                <TextBox Grid.Column="4" Text="{Binding SubfolderName, Mode=TwoWay}" IsEnabled="{Binding CreateSubfolder}"/>
+                            </Grid>
+
+                            <!-- Dãy nút chọn nhanh định dạng ảnh phổ biến (Preset Chips) -->
+                            <WrapPanel Margin="125,2,0,6">
+                                <Button Content="Tất cả (RAW+JPG)" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter=""/>
+                                <Button Content="📸 JPG / PNG" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter="jpg, png, jpeg"/>
+                                <Button Content="Sony (ARW)" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter="arw"/>
+                                <Button Content="Canon (CR2, CR3)" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter="cr2, cr3"/>
+                                <Button Content="Nikon (NEF)" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter="nef"/>
+                                <Button Content="Fuji (RAF)" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter="raf"/>
+                                <Button Content="DNG / RAW" Classes="actionBtn" Margin="0,0,5,3" Padding="8,3" FontSize="11"
+                                        Command="{Binding SelectFileTypePresetCommand}" CommandParameter="dng, raw"/>
+                            </WrapPanel>
+
+                            <TextBlock Text="💡 Bấm chọn nhanh loại máy bên trên hoặc để trống = lọc mọi loại file ảnh."
+                                       FontSize="11" Foreground="#64748B" Margin="125,0,0,8"/>
+
+                            <!-- Mã ảnh cần tìm -->
+                            <Grid Margin="0,0,0,2" ColumnDefinitions="125,*">
+                                <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,4,0,0">
+                                    <TextBlock Text="Mã ảnh cần tìm:" Foreground="#94A3B8" FontWeight="SemiBold"/>
+                                    <TextBlock Text="(Dán số / mã)" FontSize="10.5" Foreground="#64748B"/>
+                                </StackPanel>
+                                <TextBox Grid.Column="1"
+                                         Height="75"
+                                         TextWrapping="Wrap"
+                                         AcceptsReturn="True"
+                                         Text="{Binding SequenceText, Mode=TwoWay}"
+                                         Watermark="Dán danh sách mã hoặc số thứ tự ảnh khách chọn (VD: 12, 45, 120, 1550 hoặc DSC0012, DSC0045)..."/>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- 2. THANH NÚT HÀNH ĐỘNG -->
+                    <Grid Grid.Row="1" Margin="0,0,0,8">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8">
+                            <Button Content="📜 Lịch Sử Lọc" Classes="actionBtn" Click="OnFilterHistoryClick" ToolTip.Tip="Xem lại lịch sử các lần lọc ảnh theo mã khách chọn"/>
+                            <Button Content="🌐 Facebook Hoàng Điệp" Classes="actionBtn" Command="{Binding OpenFacebookCommand}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Spacing="6">
+                            <Button Content="Xóa Log" Classes="actionBtn" Command="{Binding ClearLogCommand}"/>
+                            <Button Content="Mở Thư Mục Đích" Classes="actionBtn" Command="{Binding OpenDestinationFolderCommand}"/>
+                            <Button Content="HỦY" Classes="dangerBtn" Command="{Binding CancelFilterCommand}" IsEnabled="{Binding IsFiltering}"/>
+                            <Button Content="TÌM &amp; LỌC ẢNH" Classes="primaryBtn" Command="{Binding StartFilterCommand}" IsEnabled="{Binding IsNotFiltering}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- 3. THANH TIẾN TRÌNH & TRẠNG THÁI -->
+                    <Border Grid.Row="2" Background="#161922" CornerRadius="6" Padding="10,6" Margin="0,0,0,8" BorderBrush="#252A36" BorderThickness="1">
+                        <StackPanel>
+                            <Grid Margin="0,0,0,4" ColumnDefinitions="*,Auto">
+                                <TextBlock Grid.Column="0" Text="{Binding StatusText}" FontWeight="SemiBold" Foreground="#F1F5F9" FontSize="11.5" TextTrimming="CharacterEllipsis"/>
+                                <TextBlock Grid.Column="1" Text="{Binding ProgressPercentage, StringFormat={}{0:F0}%}" FontWeight="Bold" Foreground="#38BDF8"/>
+                            </Grid>
+                            <ProgressBar Height="6" Minimum="0" Maximum="100" Value="{Binding ProgressPercentage}" Background="#232936" Foreground="#10B981" BorderThickness="0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- 4. BÁO CÁO ĐỐI SOÁT MÃ THIẾU (MISSING INSPECTOR) -->
+                    <Border Grid.Row="3" Background="#261313" BorderBrush="#DC2626" BorderThickness="1.5" CornerRadius="6" Padding="12,10" Margin="0,0,0,8"
+                            IsVisible="{Binding HasMissingCodes}">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,12,0">
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                                    <TextBlock Text="⚠️ ĐỐI SOÁT PHÁT HIỆN MÃ THIẾU (KHÔNG TÌM THẤY TRONG THƯ MỤC NGUỒN):"
+                                               FontWeight="Bold" FontSize="11.5" Foreground="#F87171"/>
+                                    <Border Background="#DC2626" CornerRadius="8" Padding="6,1" Margin="8,0,0,0" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding MissingCodesCountText}" FontSize="10.5" FontWeight="Bold" Foreground="#FFFFFF"/>
+                                    </Border>
+                                </StackPanel>
+                                <TextBox Text="{Binding MissingCodesSummaryText}"
+                                         IsReadOnly="True"
+                                         Background="#1A0D0D"
+                                         Foreground="#FCA5A5"
+                                         BorderBrush="#7F1D1D"
+                                         FontSize="11.5"
+                                         FontWeight="SemiBold"
+                                         Padding="8,5"
+                                         TextWrapping="Wrap"
+                                         MaxHeight="60"/>
+                            </StackPanel>
+                            <Button Grid.Column="1" Content="📋 Copy Mã Thiếu" Classes="actionBtn"
+                                    Background="#DC2626" Foreground="#FFFFFF" BorderBrush="#EF4444" FontWeight="Bold" FontSize="11.5"
+                                    Padding="14,8" VerticalAlignment="Center"
+                                    Command="{Binding CopyMissingCodesCommand}"
+                                    ToolTip.Tip="Sao chép toàn bộ danh sách mã ảnh không tìm thấy để gửi đối soát cho khách hàng qua Zalo/Facebook"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- 5. KHUNG KẾT QUẢ & LOG NHẬT KÝ -->
+                    <Border Grid.Row="4" Background="#161922" CornerRadius="6" Padding="10,7" Margin="0,0,0,6" BorderBrush="#252A36" BorderThickness="1">
+                        <Grid RowDefinitions="Auto,*">
+                            <TextBlock Grid.Row="0" Text="KẾT QUẢ &amp; NHẬT KÝ LỌC ẢNH" FontSize="11" FontWeight="Bold" Foreground="#94A3B8" Margin="0,0,0,6"/>
+                            <TextBox Grid.Row="1"
+                                     IsReadOnly="True"
+                                     TextWrapping="Wrap"
+                                     Background="#0B0D12"
+                                     Foreground="#CBD5E1"
+                                     BorderBrush="#1E2430"
+                                     FontFamily="Menlo, Monaco, Consolas"
+                                     FontSize="11.5"
+                                     Text="{Binding FilterLogText, Mode=OneWay}"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- 6. FOOTER TÁC GIẢ -->
+                    <TextBlock Grid.Row="5" Text="ĐƯỢC TẠO BỞI HOÀNG ĐIỆP"
+                               HorizontalAlignment="Center"
+                               FontWeight="Bold"
+                               FontSize="11"
+                               Foreground="#38BDF8"
+                               Margin="0,2,0,2"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

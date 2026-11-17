@@ -1,0 +1,24 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PhotoIngestTool.App"
+             RequestedThemeVariant="Dark">
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+
+    <TrayIcon.Icons>
+        <TrayIcons>
+            <TrayIcon Icon="avares://PhotoIngestToolMac/Assets/app_logo.png"
+                      ToolTipText="Chép Thẻ Nhanh Pro (macOS)"
+                      Clicked="OnTrayIconClicked">
+                <TrayIcon.Menu>
+                    <NativeMenu>
+                        <NativeMenuItem Header="Mở Chép Thẻ Nhanh Pro" Click="OnOpenWindowMenuClicked"/>
+                        <NativeMenuItemSeparator/>
+                        <NativeMenuItem Header="Thoát hoàn toàn" Click="OnExitMenuClicked"/>
+                    </NativeMenu>
+                </TrayIcon.Menu>
+            </TrayIcon>
+        </TrayIcons>
+    </TrayIcon.Icons>
+</Application>

@@ -1,0 +1,16 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+publish/
+*.pdb
+*.user
+
+# macOS junk
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+*.tmp
+*.log
