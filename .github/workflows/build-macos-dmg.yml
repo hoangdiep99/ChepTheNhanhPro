@@ -66,42 +66,9 @@ jobs:
               cp "src/PhotoIngestToolMac/Assets/app_logo.png" "${bundle_dir}/Contents/Resources/app_logo.png"
             fi
 
-            cat << 'EOF' > "${bundle_dir}/Contents/Info.plist"
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>CFBundleDevelopmentRegion</key>
-    <string>en</string>
-    <key>CFBundleExecutable</key>
-    <string>PhotoIngestToolMac</string>
-    <key>CFBundleIconFile</key>
-    <string>app_logo.png</string>
-    <key>CFBundleIdentifier</key>
-    <string>com.hoangdiep.chepthenhanhpro</string>
-    <key>CFBundleInfoDictionaryVersion</key>
-    <string>6.0</string>
-    <key>CFBundleName</key>
-    <string>Chép Thẻ Nhanh Pro</string>
-    <key>CFBundleDisplayName</key>
-    <string>Chép Thẻ Nhanh Pro</string>
-    <key>CFBundlePackageType</key>
-    <string>APPL</string>
-    <key>CFBundleShortVersionString</key>
-    <string>1.7.0</string>
-    <key>CFBundleVersion</key>
-    <string>1.7.0</string>
-    <key>LSMinimumSystemVersion</key>
-    <string>11.0</string>
-    <key>NSHighResolutionCapable</key>
-    <true/>
-    <key>NSRequiresAquaSystemAppearance</key>
-    <false/>
-</dict>
-</plist>
-EOF
-
+            cp "src/PhotoIngestToolMac/Info.plist" "${bundle_dir}/Contents/Info.plist"
             echo "APPL????" > "${bundle_dir}/Contents/PkgInfo"
+
             chmod +x "${bundle_dir}/Contents/MacOS/PhotoIngestToolMac"
           }
 
