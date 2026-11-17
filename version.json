@@ -1,10 +1,10 @@
 {
-  "latestVersion": "1.6.8",
+  "latestVersion": "1.7.0",
   "releaseDate": "17/11/2026",
-  "title": "Chép Thẻ Nhanh Pro v1.6.8 - Tự Động Tối Ưu Nguồn Cổng USB & Chống Sụt Áp Khi Khởi Động",
-  "changelog": "• 🛡️ TỰ ĐỘNG KIỂM TRA & KÍCH HOẠT CHỐNG SỤT NGUỒN USB KHI KHỞI ĐỘNG: Ngay khi mở phần mềm lần đầu hoặc trên máy tính mới, hệ thống tự động quét xem Windows đã tắt USB Selective Suspend và đã khóa 100% công suất cho toàn bộ USB Root Hub chưa. Nếu phát hiện chưa tối ưu, ứng dụng sẽ tự động kích hoạt chế độ chống sụt nguồn ngay lập tức.\n• ⚡ BỔ SUNG NÚT [🛡️ Chống Sụt Nguồn] TRÊN GIAO DIỆN: Cho phép thợ kiểm tra trạng thái cấp điện 5.0V và khóa tối đa công suất cổng USB chỉ bằng 1 cú click chuột bất cứ lúc nào.\n• 🔌 BẢO VỆ TRIỆT ĐỂ BOX SSD NVMe (Lexar E6, SanDisk...) & ĐẦU ĐỌC THẺ TỐC ĐỘ CAO: Chấm dứt hoàn toàn hiện tượng đang đổ ảnh được nửa thẻ thì bị văng ổ đĩa/mất kết nối ('A device which does not exist was specified') do Windows tự động ngắt nguồn tiết kiệm điện.\n• 📋 BÁO CÁO TRẠNG THÁI NGUỒN VÀO NHẬT KÝ HOẠT ĐỘNG: Ghi nhận minh bạch trạng thái tối ưu nguồn điện vào khung log thời gian thực và file báo cáo phiên làm việc.",
-  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.6.8/CaiDat_ChepTheNhanhPro_Setup.exe",
-  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.6.8/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip",
-  "downloadUrlMacIntel": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.6.8/ChepTheNhanhPro_MacOS_Intel.zip",
+  "title": "Chép Thẻ Nhanh Pro v1.7.0 - Chống Quá Nhiệt Box SSD NVMe & Phím Tắt Mở Lightroom, Capture One, Photoshop",
+  "changelog": "• 🛡️ CHỐNG NÓNG BOX SSD NVME (THERMAL GUARD - HÃM SỐC NHIỆT 15°C): Tính năng điều tiết vi mô (smart pacing) độc quyền cho các dòng Box SSD NVMe (Lexar E6, ROG Strix Arion, Orico, Acasis...). Chèn khoảng nghỉ vi mô sau các chu kỳ ghi liên tục và các file RAW dung lượng lớn, giúp vỏ nhôm kịp tản nhiệt, nhiệt độ giảm từ 12°C - 15°C, chống sốc nhiệt gây văng ổ hoặc sụt tốc độ.\n• 🚀 TỰ ĐỘNG MỞ & PHÍM TẮT LIGHTROOM CLASSIC / CAPTURE ONE / PHOTOSHOP: Tự động phát hiện các phần mềm hậu kỳ ảnh cài đặt trên máy. Cho phép tự động mở thư mục ảnh ngay sau khi đổ thẻ hoặc bấm phím tắt ở thanh công cụ dưới cùng để bắt đầu làm việc ngay.\n• ⚡ TỰ ĐỘNG KHÓA CÔNG SUẤT NGUỒN CỔNG USB KHI KHỞI ĐỘNG: Đảm bảo cổng USB luôn cấp đủ điện áp 5.0V và dòng tải tối đa, ngăn ngừa triệt để lỗi ngắt kết nối do Windows tự ý hạ điện năng.\n• 🛠️ NÂNG CAO ĐỘ ỔN ĐỊNH TOÀN DIỆN: Tối ưu hóa đa luồng Dispatcher UI, chống nghẽn bộ nhớ đệm và cải thiện tốc độ sao chép song song Dual-Copy.",
+  "downloadUrlWindows": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.7.0/CaiDat_ChepTheNhanhPro_Setup.exe",
+  "downloadUrlMac": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.7.0/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip",
+  "downloadUrlMacIntel": "https://github.com/hoangdiep99/ChepTheNhanhPro/releases/download/v1.7.0/ChepTheNhanhPro_MacOS_Intel.zip",
   "isMandatory": false
 }
