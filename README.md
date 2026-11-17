@@ -17,8 +17,9 @@
 | :--- | :--- | :--- |
 | **Windows 10 / 11** | **Bộ Cài Đặt (.exe)** | [👉 Tải CaiDat_ChepTheNhanhPro_Setup.exe](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/CaiDat_ChepTheNhanhPro_Setup.exe) |
 | **Windows 10 / 11** | **Bản Chạy Ngay (Portable)** | [👉 Tải ChepTheNhanhPro_Portable.exe](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/ChepTheNhanhPro_Portable.exe) |
-| **macOS (Apple Silicon)** | **M1, M2, M3, M4** | [👉 Tải ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip) |
-| **macOS (Intel)** | **Chip Intel Core i5/i7/i9** | [👉 Tải ChepTheNhanhPro_MacOS_Intel.zip](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/ChepTheNhanhPro_MacOS_Intel.zip) |
+| **macOS (Apple Silicon)** | **File Cài .DMG (M1, M2, M3, M4)** | [👉 Tải ChepTheNhanhPro_MacOS_AppleSilicon_v1.7.0.dmg](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/ChepTheNhanhPro_MacOS_AppleSilicon_v1.7.0.dmg) |
+| **macOS (Intel)** | **File Cài .DMG (Chip Intel)** | [👉 Tải ChepTheNhanhPro_MacOS_Intel_v1.7.0.dmg](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/ChepTheNhanhPro_MacOS_Intel_v1.7.0.dmg) |
+| **macOS (Gói .ZIP)** | **Bản nén .zip truyền thống** | [👉 Tải ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip](https://github.com/hoangdiep99/ChepTheNhanhPro/releases/latest/download/ChepTheNhanhPro_MacOS_AppleSilicon_M1_M2_M3_M4.zip) |
 
 ---
 
