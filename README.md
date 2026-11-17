@@ -25,6 +25,10 @@
 ## ✨ Tính Năng Nổi Bật
 
 ### ⚡ 1. Đổ Thẻ & Sao Chép Dữ Liệu Tốc Độ Cao (Tab 1)
+* 🔌 **Tích Hợp Lõi USBDeview & Đo Tốc Độ Cổng, Dòng Điện (mA), Điện Áp**: Tự động đo và hiển thị chính xác tốc độ cổng USB đang cắm (USB 3.2 Gen 2 10Gbps, USB 3.0 SuperSpeed 5Gbps hay USB 2.0 480Mbps), phát hiện ngay trường hợp cắm nhầm cổng USB 2.0 làm nghẽn tốc độ và dễ sụt áp.
+* ⚡ **Đo Dòng Điện Tiêu Thụ (mA) & Đánh Giá Độ Ổn Định Điện Áp 5.0V**: Truy vấn trực tiếp thanh ghi USB Hub để lấy định mức dòng điện tiêu thụ (Negotiated MaxPower mA / Port Capacity mA) cùng thanh đo % tải; phát hiện ngay nguy cơ quá tải dòng điện hoặc sụt áp trên cổng mặt trước / Hub chia cổng.
+* 🔄 **Nút Reset Cổng USB 1-Click**: Tích hợp lệnh `/disable_enable` của USBDeview giúp khởi động lại nhanh cổng USB khi thiết bị bị treo, đơ I/O hoặc bị Windows khóa ngầm sau nhiều lần cắm/rút chập chờn mà không cần phải khởi động lại máy tính.
+* 🔍 **Bảng Điều Khiển USBDeview Trực Quan**: Nút `[🔌 Lõi USBDeview]` ngay trên thanh công cụ cho phép mở giao diện chuyên sâu của NirSoft USBDeview để quản lý toàn bộ thiết bị USB kết nối vào máy tính.
 * 🛡️ **Cơ Chế Chống Văng Thẻ & Tự Bù Giờ Kết Nối Lại (15s Grace Period)**: Khắc phục sự cố thẻ nhớ dung lượng lớn (128GB, 256GB) bị sụt nguồn cổng USB hoặc nóng đầu đọc văng thẻ giữa chừng (~50%). Ứng dụng tự động tạm dừng luồng I/O trong 15s để thẻ nhận diện lại rồi tiếp tục sao chép ngay lập tức mà không gây lỗi đứt gãy.
 * 📑 **Báo Cáo Gián Đoạn Cứu Sinh (ingest_interrupted_report.txt)**: Ngay cả khi bị rút thẻ đột ngột hoặc mất điện, app vẫn tức thì tạo file báo cáo gián đoạn ghi rõ số file đã băm xxHash64 an toàn, danh sách file còn thiếu và hướng dẫn cắm lại thẻ bấm Đổ Tiếp (Incremental Ingest) mà không phải chép lại từ đầu.
 * 📝 **Nhật Ký Thời Gian Thực Lưu Vĩnh Viễn Trên Ổ Cứng (Real-Time Persistent Log)**: Mọi biến động I/O, cắm/rút thiết bị và mã băm xxHash64 đều được ghi tức thì ra đĩa (`%LocalAppData%\PhotoIngestTool\Logs\app_yyyy-MM-dd.log`), kèm nút `[📄 Xem Log]` và `[📂 Thư mục Log]` trực quan trên giao diện.
